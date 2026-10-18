@@ -3,6 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- seo-sec -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'sha256-lFgpoMKIuvyOnovT73ydDZePBugBy+plNXQab1iACGU='; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MRC Group">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Focus Streams | MRC Group">
+<meta property="og:description" content="Laboratory equipment, scientific instrumentation, environmental measurement and industrial solutions.">
+<meta property="og:url" content="https://mrc-group.net/streams.html">
+<meta property="og:image" content="https://mrc-group.net/favicon.png">
+<!-- /seo-sec -->
 <title>Focus Streams | MRC Group</title>
 <meta name="description" content="Laboratory equipment, scientific instrumentation, environmental measurement and industrial solutions.">
 <link rel="canonical" href="https://mrc-group.net/streams.html">
@@ -122,6 +136,11 @@ section{padding:88px 0}
 .cert{text-align:center}
 .cert .logo{height:92px;display:grid;place-items:center}
 .cert img{max-height:92px;width:auto;object-fit:contain}
+.certgroup{margin-top:44px;padding-top:28px;border-top:1px solid var(--line)}
+.certgroup:first-of-type{border-top:0;padding-top:0}
+.certgroup h3{font-size:1.25rem;color:var(--navy)}
+.certgroup .scope{color:var(--muted);max-width:72ch;margin:8px 0 0}
+.certgroup .certs{margin-top:24px}
 .cert p{margin:12px 0 0;font-size:.88rem;color:var(--muted);line-height:1.4}
 @media (max-width:900px){.certs{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:520px){.certs{grid-template-columns:repeat(2,1fr)}}
@@ -154,8 +173,7 @@ footer a:hover{text-decoration:underline}
 }
 .page-head{background:var(--navy);color:#fff;padding:56px 0 52px}
 .page-head .crumb{font-size:.88rem;color:#A9C3DD;margin-bottom:10px}
-.page-head .crumb a{color:#CFE0F0;text-decoration:none}
-.page-head .crumb a:hover{text-decoration:underline}
+.page-head .crumb a{color:#CFE0F0;text-decoration:underline;text-underline-offset:3px}
 .page-head h1{font-size:clamp(2rem,4vw,2.8rem);font-weight:800}
 .page-head p{color:#C9D8EA;max-width:62ch;margin:12px 0 0;font-size:1.05rem}
 .inner section{padding:64px 0 88px}
@@ -169,11 +187,14 @@ footer a:hover{text-decoration:underline}
 @media (max-width:560px){.explore{grid-template-columns:1fr}}
 .contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .contact-cards div{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:24px}
-.contact-cards h3{font-size:.95rem;color:var(--teal);margin-bottom:8px}
+.contact-cards h3{font-size:.95rem;color:#1C6482;margin-bottom:8px}
 .contact-cards p{margin:0;font-size:1.02rem}
 .contact-cards a{text-decoration:none;font-weight:600}
 @media (max-width:760px){.contact-cards{grid-template-columns:1fr}}
 .contact-note{margin-top:40px;color:var(--muted)}
+
+.vision h3{color:#1C6482}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 body{min-height:100vh;display:flex;flex-direction:column}
 body>main{flex:1 0 auto}
@@ -194,6 +215,7 @@ body>main{flex:1 0 auto}
         <li><a href="streams.html" aria-current="page">Focus Streams</a></li>
         <li><a href="quality.html">Governance &amp; Quality</a></li>
         <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="he.html" lang="he" hreflang="he">עברית</a></li>
       </ul>
     </nav>
   </div>
@@ -208,6 +230,7 @@ body>main{flex:1 0 auto}
     </div>
   </div>
   <section id="streams">
+    <h2 class="sr-only">Our markets</h2>
     <div class="wrap">
       
       <div class="streams">
