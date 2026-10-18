@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <!-- seo-sec -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'sha256-lFgpoMKIuvyOnovT73ydDZePBugBy+plNXQab1iACGU='; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; frame-src https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'sha256-lFgpoMKIuvyOnovT73ydDZePBugBy+plNXQab1iACGU='; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
@@ -198,6 +198,22 @@ footer a:hover{text-decoration:underline}
 
 body{min-height:100vh;display:flex;flex-direction:column}
 body>main{flex:1 0 auto}
+
+.co{align-items:start}
+.co .svc-h{margin:18px 0 6px;font-size:.95rem;color:var(--navy)}
+.services{margin:0;padding-left:20px;display:grid;gap:4px;font-size:.93rem;color:var(--ink)}
+.co .map{margin-top:16px;border:1px solid var(--line);border-radius:8px;overflow:hidden;max-width:560px}
+.co .map iframe{display:block;width:100%;height:220px;border:0}
+.co p.addr{margin-top:8px;font-size:.92rem}
+.co p.addr a{font-weight:600;text-decoration:none}
+.co p.addr a:hover{text-decoration:underline}
+
+@media (max-width:1180px){
+  .menu-btn{display:block;margin-left:auto}
+  .nav{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding:8px 24px 16px}
+  .nav.open{display:flex}
+  .nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}}
+.nav a{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -214,6 +230,7 @@ body>main{flex:1 0 auto}
         <li><a href="companies.html" aria-current="page">Our Companies</a></li>
         <li><a href="streams.html">Focus Streams</a></li>
         <li><a href="quality.html">Governance &amp; Quality</a></li>
+        <li><a href="locations.html">Locations</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="he.html" lang="he" hreflang="he">עברית</a></li>
       </ul>
@@ -241,11 +258,10 @@ body>main{flex:1 0 auto}
             <h3>MRC Laboratory Equipment</h3>
             <div class="field lab">Laboratory Instruments</div>
             <p>Founded in 1989, MRC is a leading Israeli supplier of laboratory and industrial equipment. It designs and manufactures laboratory instruments under the MRC brand and represents around 50 leading manufacturers worldwide. Its range covers heating and cooling equipment, environmental chambers, balances, microscopes, centrifuges, measuring instruments and advanced analytical systems, backed by an in-house service center in Holon.</p>
-            <ul class="details">
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><a href="https://www.mrclab.com" target="_blank" rel="noopener">www.mrclab.com</a></li>
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Hagavish 3, Holon 5881702, Israel</span></li>
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+97235595252" dir="ltr">+972-3-5595252</a></li>
-            </ul>
+            <h4 class="svc-h">Services</h4>
+            <ul class="services"><li>Design and manufacture of laboratory instruments under the MRC brand</li><li>Representation and supply of products from around 50 leading manufacturers</li><li>Heating and cooling equipment, environmental chambers, balances, microscopes and centrifuges</li><li>Measuring instruments and advanced analytical systems</li><li>Installation, maintenance and repair at the in-house service center in Holon</li></ul>
+            <div class="map"><iframe src="https://www.google.com/maps?q=Hagavish+3%2C+Holon+5881702%2C+Israel&amp;output=embed" title="Map: MRC Laboratory Equipment, Hagavish 3, Holon 5881702, Israel" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <p class="addr"><a href="https://www.google.com/maps/search/?api=1&amp;query=Hagavish+3%2C+Holon+5881702%2C+Israel" target="_blank" rel="noopener">Hagavish 3, Holon 5881702, Israel</a></p>
           </div>
           <a class="btn btn-outline" href="https://www.mrclab.com" target="_blank" rel="noopener" aria-label="Visit MRC Laboratory Equipment website">Visit website</a>
         </article>
@@ -255,11 +271,10 @@ body>main{flex:1 0 auto}
             <h3>Munro Scientific</h3>
             <div class="field red">Laboratory Equipment, UK</div>
             <p>Munro Scientific is the group's UK laboratory equipment business, based in Harlow alongside Munro Instruments. It develops, manufactures and supplies scientific equipment to customers in more than 70 countries, with a range of over 3,000 laboratory products, including balances, measuring instruments and materials testing equipment, backed by after-sales support.</p>
-            <ul class="details">
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><a href="https://www.munroscientific.co.uk" target="_blank" rel="noopener">www.munroscientific.co.uk</a></li>
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Cavendish House, Parkway, Harlow Business Park, Harlow, Essex CM19 5QF, United Kingdom</span></li>
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+442085517000" dir="ltr">+44-20-8551-7000</a></li>
-            </ul>
+            <h4 class="svc-h">Services</h4>
+            <ul class="services"><li>Development and manufacture of scientific equipment</li><li>Supply of over 3,000 laboratory products, including balances, measuring instruments and materials testing equipment</li><li>Export to customers in more than 70 countries</li><li>After-sales support</li></ul>
+            <div class="map"><iframe src="https://www.google.com/maps?q=Cavendish+House%2C+Parkway%2C+Harlow+Business+Park%2C+Harlow%2C+Essex+CM19+5QF%2C+United+Kingdom&amp;output=embed" title="Map: Munro Scientific, Cavendish House, Parkway, Harlow Business Park, Harlow, Essex CM19 5QF, United Kingdom" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <p class="addr"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cavendish+House%2C+Parkway%2C+Harlow+Business+Park%2C+Harlow%2C+Essex+CM19+5QF%2C+United+Kingdom" target="_blank" rel="noopener">Cavendish House, Parkway, Harlow Business Park, Harlow, Essex CM19 5QF, United Kingdom</a></p>
           </div>
           <a class="btn btn-outline" href="https://www.munroscientific.co.uk" target="_blank" rel="noopener" aria-label="Visit Munro Scientific website">Visit website</a>
         </article>
@@ -270,11 +285,10 @@ body>main{flex:1 0 auto}
             <h3>Munro Instruments</h3>
             <div class="field red">Meteorology, Air Quality &amp; Slip Resistance</div>
             <p>Founded by R.W. Munro in 1864 and part of MRC Group since 2019, Munro Instruments manufactures specialist instruments in Harlow, UK, for meteorology, air quality and slip and skid resistance. Its products include meteorological sensors, air samplers used in the nuclear, chemical, construction and agricultural industries, the Munro Stanley Portable Skid Resistance Tester and anaerobic workstations. It operates a UKAS-accredited laboratory for pendulum calibration and floor slip resistance testing.</p>
-            <ul class="details">
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><a href="https://www.munroinstruments.com" target="_blank" rel="noopener">www.munroinstruments.com</a></li>
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Cavendish House, Parkway, Harlow Business Park, Harlow, Essex CM19 5QF, United Kingdom</span></li>
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+442085517000" dir="ltr">+44-20-8551-7000</a></li>
-            </ul>
+            <h4 class="svc-h">Services</h4>
+            <ul class="services"><li>Meteorological sensors</li><li>Air samplers for the nuclear, chemical, construction and agricultural industries</li><li>Munro Stanley Portable Skid Resistance Tester</li><li>Anaerobic workstations</li><li>UKAS-accredited pendulum calibration</li><li>UKAS-accredited floor slip resistance testing</li></ul>
+            <div class="map"><iframe src="https://www.google.com/maps?q=Cavendish+House%2C+Parkway%2C+Harlow+Business+Park%2C+Harlow%2C+Essex+CM19+5QF%2C+United+Kingdom&amp;output=embed" title="Map: Munro Instruments, Cavendish House, Parkway, Harlow Business Park, Harlow, Essex CM19 5QF, United Kingdom" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <p class="addr"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cavendish+House%2C+Parkway%2C+Harlow+Business+Park%2C+Harlow%2C+Essex+CM19+5QF%2C+United+Kingdom" target="_blank" rel="noopener">Cavendish House, Parkway, Harlow Business Park, Harlow, Essex CM19 5QF, United Kingdom</a></p>
           </div>
           <a class="btn btn-outline" href="https://www.munroinstruments.com" target="_blank" rel="noopener" aria-label="Visit Munro Instruments website">Visit website</a>
         </article>
@@ -285,11 +299,10 @@ body>main{flex:1 0 auto}
             <h3>Meteo-Tech</h3>
             <div class="field green">Meteorology &amp; Environmental Sciences</div>
             <p>Meteo-Tech is one of Israel's leading suppliers of instrumentation and services for meteorology and the environmental sciences. It designs, installs and maintains weather station networks, and supplies equipment for industrial monitoring, air quality, aviation and laboratories. Its environmental consulting services include pollutant dispersion modelling, where it holds patented technologies, as well as forensic meteorology and climate surveys.</p>
-            <ul class="details">
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><a href="https://www.meteo-tech.co.il" target="_blank" rel="noopener">www.meteo-tech.co.il</a></li>
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>31 Lehi St., Bnei Brak 5120052, Israel</span></li>
-              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+97236160598" dir="ltr">+972-3-6160598</a></li>
-            </ul>
+            <h4 class="svc-h">Services</h4>
+            <ul class="services"><li>Design, installation and maintenance of weather station networks</li><li>Equipment for industrial monitoring, air quality, aviation and laboratories</li><li>Pollutant dispersion modelling, using patented technologies</li><li>Forensic meteorology</li><li>Climate surveys</li></ul>
+            <div class="map"><iframe src="https://www.google.com/maps?q=31+Lehi+St.%2C+Bnei+Brak+5120052%2C+Israel&amp;output=embed" title="Map: Meteo-Tech, 31 Lehi St., Bnei Brak 5120052, Israel" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <p class="addr"><a href="https://www.google.com/maps/search/?api=1&amp;query=31+Lehi+St.%2C+Bnei+Brak+5120052%2C+Israel" target="_blank" rel="noopener">31 Lehi St., Bnei Brak 5120052, Israel</a></p>
           </div>
           <a class="btn btn-outline" href="https://www.meteo-tech.co.il" target="_blank" rel="noopener" aria-label="Visit Meteo-Tech website">Visit website</a>
         </article>

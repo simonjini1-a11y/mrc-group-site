@@ -198,6 +198,26 @@ footer a:hover{text-decoration:underline}
 
 body{min-height:100vh;display:flex;flex-direction:column}
 body>main{flex:1 0 auto}
+
+.subs{background:var(--soft)}
+.subs h2{color:var(--navy)}
+.sub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px}
+.sub{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px}
+.sub h3{font-size:1.1rem;color:var(--navy)}
+.sub .ctry{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+.sub dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:18px 0 0;font-size:.95rem}
+.sub dt{color:var(--muted);font-weight:600}
+.sub dd{margin:0}
+.sub dd a{font-weight:600;text-decoration:none}
+.sub dd a:hover{text-decoration:underline}
+@media (max-width:760px){.sub-grid{grid-template-columns:1fr}}
+
+@media (max-width:1180px){
+  .menu-btn{display:block;margin-left:auto}
+  .nav{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding:8px 24px 16px}
+  .nav.open{display:flex}
+  .nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}}
+.nav a{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -214,6 +234,7 @@ body>main{flex:1 0 auto}
         <li><a href="companies.html">Our Companies</a></li>
         <li><a href="streams.html">Focus Streams</a></li>
         <li><a href="quality.html">Governance &amp; Quality</a></li>
+        <li><a href="locations.html">Locations</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="he.html" lang="he" hreflang="he">עברית</a></li>
       </ul>
@@ -239,6 +260,37 @@ body>main{flex:1 0 auto}
       <div class="vision">
         <h3>Our vision</h3>
         <p>To accelerate research, protect climate resources, and ensure industrial quality.</p>
+      </div>
+    </div>
+  </section>
+  <section class="subs" id="contacts" aria-labelledby="subs-h">
+    <div class="wrap">
+      <h2 id="subs-h">Contact our companies</h2>
+      <div class="sub-grid">
+        <article class="sub"><h3>MRC Laboratory Equipment</h3><p class="ctry">Israel</p><dl>
+          <dt>Address</dt><dd>Hagavish 3, Holon 5881702, Israel</dd>
+          <dt>Phone</dt><dd><a href="tel:+97235595252" dir="ltr">+972-3-5595252</a></dd>
+          <dt>Email</dt><dd><a href="mailto:info@mrc-group.net">info@mrc-group.net</a></dd>
+          <dt>Website</dt><dd><a href="https://www.mrclab.com" target="_blank" rel="noopener">www.mrclab.com</a></dd>
+        </dl></article>
+        <article class="sub"><h3>Munro Scientific</h3><p class="ctry">United Kingdom</p><dl>
+          <dt>Address</dt><dd>Cavendish House, Parkway, Harlow Business Park, Harlow, Essex CM19 5QF, United Kingdom</dd>
+          <dt>Phone</dt><dd><a href="tel:+442085517000" dir="ltr">+44-20-8551-7000</a></dd>
+          <dt>Email</dt><dd><a href="mailto:info@mrc-group.net">info@mrc-group.net</a></dd>
+          <dt>Website</dt><dd><a href="https://www.munroscientific.co.uk" target="_blank" rel="noopener">www.munroscientific.co.uk</a></dd>
+        </dl></article>
+        <article class="sub"><h3>Munro Instruments</h3><p class="ctry">United Kingdom</p><dl>
+          <dt>Address</dt><dd>Cavendish House, Parkway, Harlow Business Park, Harlow, Essex CM19 5QF, United Kingdom</dd>
+          <dt>Phone</dt><dd><a href="tel:+442085517000" dir="ltr">+44-20-8551-7000</a></dd>
+          <dt>Email</dt><dd><a href="mailto:info@mrc-group.net">info@mrc-group.net</a></dd>
+          <dt>Website</dt><dd><a href="https://www.munroinstruments.com" target="_blank" rel="noopener">www.munroinstruments.com</a></dd>
+        </dl></article>
+        <article class="sub"><h3>Meteo-Tech</h3><p class="ctry">Israel</p><dl>
+          <dt>Address</dt><dd>31 Lehi St., Bnei Brak 5120052, Israel</dd>
+          <dt>Phone</dt><dd><a href="tel:+97236160598" dir="ltr">+972-3-6160598</a></dd>
+          <dt>Email</dt><dd><a href="mailto:info@mrc-group.net">info@mrc-group.net</a></dd>
+          <dt>Website</dt><dd><a href="https://www.meteo-tech.co.il" target="_blank" rel="noopener">www.meteo-tech.co.il</a></dd>
+        </dl></article>
       </div>
     </div>
   </section>

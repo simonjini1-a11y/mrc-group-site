@@ -198,6 +198,13 @@ footer a:hover{text-decoration:underline}
 
 body{min-height:100vh;display:flex;flex-direction:column}
 body>main{flex:1 0 auto}
+
+@media (max-width:1180px){
+  .menu-btn{display:block;margin-left:auto}
+  .nav{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding:8px 24px 16px}
+  .nav.open{display:flex}
+  .nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}}
+.nav a{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -214,6 +221,7 @@ body>main{flex:1 0 auto}
         <li><a href="companies.html">Our Companies</a></li>
         <li><a href="streams.html">Focus Streams</a></li>
         <li><a href="quality.html">Governance &amp; Quality</a></li>
+        <li><a href="locations.html">Locations</a></li>
         <li><a href="contact.html" aria-current="page">Contact Us</a></li>
         <li><a href="he.html" lang="he" hreflang="he">עברית</a></li>
       </ul>
@@ -234,10 +242,10 @@ body>main{flex:1 0 auto}
     <div class="wrap">
       <div class="contact-cards">
         <div><h3>Head office</h3><p>Hagavish 3, Holon 5881702, Israel</p></div>
-        <div><h3>Email</h3><p><a href="mailto:mrc@mrclab.com">mrc@mrclab.com</a></p></div>
+        <div><h3>Email</h3><p><a href="mailto:info@mrc-group.net">info@mrc-group.net</a></p></div>
         <div><h3>Phone</h3><p><a href="tel:+97235595252" dir="ltr">+972-3-5595252</a></p></div>
       </div>
-      <p class="contact-note">For inquiries about a specific product or service, please contact the relevant company directly. Contact details for each company are listed on the <a href="companies.html">Our Companies</a> page.</p>
+      <p class="contact-note">For inquiries about a specific product or service, please contact the relevant company directly. Contact details for each company are listed on the <a href="about.html#contacts">About the Group</a> page.</p>
     </div>
   </section>
 </main>
