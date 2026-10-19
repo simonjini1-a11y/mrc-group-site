@@ -188,6 +188,35 @@ body>main{flex:1 0 auto}
   .nav.open{display:flex}
   .nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}}
 .nav a{white-space:nowrap}
+
+/* shared: nav dropdown + footer */
+.nav .has-sub{position:relative}
+.nav .has-sub>a{display:inline}
+.nav .sub::before{content:"";position:absolute;left:0;right:0;top:-16px;height:16px}
+.nav .caret{width:12px;height:12px;margin-left:5px;vertical-align:0;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nav .sub{display:none;position:absolute;top:100%;left:-18px;z-index:60;list-style:none;margin:0;padding:8px 0;min-width:230px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 40px -12px rgba(10,35,72,.25)}
+.nav .has-sub:hover .sub,.nav .has-sub:focus-within .sub{display:block}
+.nav .sub a{display:block;padding:9px 18px;border-bottom:0;font-weight:600;white-space:nowrap}
+.nav .sub a:hover,.nav .sub a[aria-current="page"]{background:var(--soft);color:var(--navy)}
+.nav .has-sub.is-current>a{border-bottom-color:var(--teal);color:var(--navy)}
+@media (max-width:1180px){
+  .nav .sub{display:block;position:static;border:0;box-shadow:none;padding:0 0 0 16px;min-width:0;border-radius:0}
+  .nav .sub a{padding:10px 0;border-bottom:1px solid var(--line);font-weight:500}
+  .nav .caret{display:none}
+}
+footer.site-footer{background:#071A36;color:#A9B8CC;font-size:.92rem;padding:64px 0 0}
+footer.site-footer .ft-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;justify-content:initial}
+.ft-logo{margin:0;font-size:1.6rem;font-weight:800;color:#fff;letter-spacing:.01em}
+.ft-logo span{color:#4FB3D9}
+.ft-brand p{margin:12px 0 0;max-width:36ch;line-height:1.6}
+.ft-brand .ft-logo{margin:0}
+.ft-mail{display:inline-block;margin-top:16px;color:#fff!important;font-weight:700}
+.ft-col h2{margin:0 0 14px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#fff;font-weight:700}
+footer.site-footer .ft-col ul{display:grid;gap:10px;list-style:none;margin:0;padding:0}
+footer.site-footer .ft-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-top:48px;padding:22px 24px;border-top:1px solid rgba(255,255,255,.1)}
+footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style:none;margin:0;padding:0}
+@media (max-width:860px){footer.site-footer .ft-grid{grid-template-columns:1fr 1fr}.ft-brand{grid-column:1/-1}}
+@media (max-width:480px){footer.site-footer .ft-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -198,11 +227,10 @@ body>main{flex:1 0 auto}
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav aria-label="Main">
       <ul class="nav" id="nav">
-        <li><a href="about.html">About the Group</a></li>
-        <li><a href="leadership.html">Leadership</a></li>
-        <li><a href="companies.html">Our Companies</a></li>
-        <li><a href="streams.html">Focus Streams</a></li>
-        <li><a href="quality.html">Governance &amp; Quality</a></li>
+        <li class="has-sub"><a href="about.html" aria-haspopup="true">About<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="about.html">Group Overview</a></li><li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech</a></li><li><a href="munro-instruments.html">Munro Instruments</a></li><li><a href="team.html">Meet Our Team</a></li></ul></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="streams.html">Solutions</a></li>
         <li><a href="locations.html">Locations</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="he.html" lang="he" hreflang="he">עברית</a></li>
@@ -234,8 +262,21 @@ body>main{flex:1 0 auto}
 
   </div>
 </main>
-<footer>
-  <div class="wrap">
+<footer class="site-footer">
+  <div class="wrap ft-grid">
+    <div class="ft-brand">
+      <p class="ft-logo">MRC <span>GROUP</span></p>
+      <p>Scientific, laboratory and measurement solutions from Israel and the United Kingdom, serving customers worldwide since 1989.</p>
+      <a class="ft-mail" href="mailto:info@mrc-group.net">info@mrc-group.net</a>
+    </div>
+    <nav class="ft-col" aria-label="About"><h2>About</h2><ul>
+      <li><a href="about.html">Group Overview</a></li><li><a href="team.html">Meet Our Team</a></li><li><a href="quality.html">Quality &amp; Accreditations</a></li></ul></nav>
+    <nav class="ft-col" aria-label="Our companies"><h2>Our Companies</h2><ul>
+      <li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech</a></li><li><a href="munro-instruments.html">Munro Instruments</a></li></ul></nav>
+    <nav class="ft-col" aria-label="Explore"><h2>Explore</h2><ul>
+      <li><a href="equipment.html">Equipment</a></li><li><a href="services.html">Services</a></li><li><a href="streams.html">Solutions</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
+  </div>
+  <div class="wrap ft-bottom">
     <ul>
       <li><a href="disclaimer.html">Disclaimer</a></li>
       <li><a href="privacy.html">Privacy</a></li>
