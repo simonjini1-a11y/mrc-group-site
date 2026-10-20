@@ -295,6 +295,17 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
 .nav .flag.on{background:var(--soft);box-shadow:0 0 0 2px var(--teal)}
 .nav .flag:hover svg{transform:translateY(-1px)}
 @media (max-width:1180px){.nav .lang{padding:12px 0;gap:14px}.nav .lang .flag{border-bottom:0;padding:3px}}
+
+.gal{padding:0 0 72px}
+.gal-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:200px 200px;gap:16px}
+.gal-grid figure{position:relative;margin:0;border-radius:16px;overflow:hidden;background:#E9EEF5}
+.gal-grid figure:first-child{grid-row:span 2}
+.gal-grid figure:nth-child(4){grid-column:span 2}
+.gal-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.gal-grid figure:hover img{transform:scale(1.04)}
+.gal-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;color:#fff;font-weight:700;font-size:.92rem;background:linear-gradient(transparent,rgba(7,26,54,.75))}
+@media (max-width:760px){.gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gal-grid figure{height:180px}.gal-grid figure:first-child{grid-row:auto;grid-column:span 2}.gal-grid figure:nth-child(4){grid-column:auto}}
+@media (prefers-reduced-motion:reduce){.gal-grid img{transition:none}}
 </style>
 </head>
 <body>
@@ -337,6 +348,9 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
         <p>To accelerate research, protect climate resources, and ensure industrial quality.</p>
       </div>
     </div>
+  </section>
+    <section class="gal" aria-label="Inside MRC Group">
+    <div class="wrap gal-grid"><figure><img src="images/gallery/production-floor.jpg" alt="Production floor" loading="lazy"><figcaption>Production floor</figcaption></figure><figure><img src="images/gallery/production-line.jpg" alt="Production line" loading="lazy"><figcaption>Production line</figcaption></figure><figure><img src="images/gallery/exhibition-1.jpg" alt="International exhibitions" loading="lazy"><figcaption>International exhibitions</figcaption></figure><figure><img src="images/gallery/exhibition-2.jpg" alt="Laboratory products showcase" loading="lazy"><figcaption>Laboratory products showcase</figcaption></figure></div>
   </section>
   <section class="hs" aria-labelledby="hs-h">
     <div class="wrap">
