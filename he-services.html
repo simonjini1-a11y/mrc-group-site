@@ -287,6 +287,25 @@ html[dir="rtl"] .marquee{direction:ltr}
 html[dir="rtl"] .services,html[dir="rtl"] .dept ul{padding-left:0;padding-right:20px}
 html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
 .ltr{direction:ltr;unicode-bidi:isolate}
+
+/* language flags */
+.nav .lang{display:flex;align-items:center;gap:8px}
+.nav .flag{display:inline-flex;padding:3px;border-radius:5px;border-bottom:0!important;line-height:0}
+.nav .flag svg{width:26px;height:17px;border-radius:2px;box-shadow:0 0 0 1px rgba(10,35,72,.18)}
+.nav .flag.on{background:var(--soft);box-shadow:0 0 0 2px var(--teal)}
+.nav .flag:hover svg{transform:translateY(-1px)}
+@media (max-width:1180px){.nav .lang{padding:12px 0;gap:14px}.nav .lang .flag{border-bottom:0;padding:3px}}
+
+.tiles li{overflow:hidden}
+.t-img{position:relative;margin:-28px -28px 22px;height:180px;background:var(--photo) center/cover no-repeat,linear-gradient(140deg,#0A2348,#16386B 55%,#2A8DB4)}
+.t-img:not(.has){background:linear-gradient(140deg,#0A2348,#16386B 55%,#2A8DB4)}
+.t-img:not(.has)::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(79,179,217,.35),transparent 55%),radial-gradient(circle at 15% 90%,rgba(255,255,255,.08),transparent 45%)}
+.t-img .big{position:absolute;right:22px;bottom:14px;width:92px;height:92px;fill:none;stroke:rgba(255,255,255,.22);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.t-img.has .big{display:none}
+.tiles .t-img+.ic{margin-top:-46px;position:relative;background:#fff;box-shadow:0 8px 20px -10px rgba(10,35,72,.4)}
+html[dir="rtl"] .t-img .big{right:auto;left:22px}
+.stream{overflow:hidden}
+.stream .t-img{margin:-28px -28px 20px}
 </style>
 </head>
 <body>
@@ -298,13 +317,13 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">תפריט</button>
     <nav aria-label="ראשי">
       <ul class="nav" id="nav">
-        <li class="has-sub"><a href="he-about.html" aria-haspopup="true">אודות<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-mrc.html" lang="en">MRC Ltd</a></li><li><a href="he-meteo-tech.html" lang="en">Meteo-Tech</a></li><li><a href="he-munro-instruments.html" lang="en">Munro Instruments</a></li><li><a href="he-team.html">הצוות שלנו</a></li></ul></li>
+        <li class="has-sub"><a href="he-about.html" aria-haspopup="true">אודות<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-growth.html">הצמיחה שלנו</a></li><li><a href="he-mrc.html" lang="en">MRC Ltd</a></li><li><a href="he-meteo-tech.html" lang="en">Meteo-Tech Ltd</a></li><li><a href="he-munro-instruments.html" lang="en">Munro Instruments Limited</a></li><li><a href="he-team.html">הצוות שלנו</a></li></ul></li>
         <li><a href="he-equipment.html">ציוד</a></li>
         <li><a href="he-services.html" aria-current="page">שירותים</a></li>
         <li><a href="he-solutions.html">פתרונות</a></li>
         <li><a href="he-locations.html">מיקומים</a></li>
         <li><a href="he-contact.html">צור קשר</a></li>
-        <li><a href="services.html" lang="en" hreflang="en">English</a></li>
+        <li class="lang"><a class="flag" href="services.html" lang="en" hreflang="en" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#C8102E" stroke-width="2.4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a><a class="flag on" href="he-services.html" lang="he" hreflang="he" aria-label="עברית" aria-current="true"><svg viewBox="0 0 44 32" aria-hidden="true"><path fill="#fff" d="M0 0h44v32H0z"/><path fill="#0038B8" d="M0 3h44v4.5H0zM0 24.5h44V29H0z"/><path fill="none" stroke="#0038B8" stroke-width="1.6" d="M22 9.6l5.6 9.7H16.4zM22 22.4l-5.6-9.7h11.2z"/></svg></a></li>
       </ul>
     </nav>
   </div>
@@ -313,14 +332,13 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
 <main id="main" class="inner">
   <div class="page-head">
     <div class="wrap">
-      <div class="crumb"><a href="he.html">דף הבית</a> ‹ שירותים</div>
       <h1>שירותים</h1>
       <p>שירותי התקנה, כיול, בדיקות וייעוץ בחברות הקבוצה.</p>
     </div>
   </div>
   <section>
     <div class="wrap">
-      <ul class="tiles"><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5 5L4 17l3 3 5.7-5.7a4 4 0 0 0 5-5l-2.4 2.4-2.6-.7-.7-2.6z"/></svg></span><h3>התקנה, תחזוקה ותיקון</h3><p>התקנה ושירות באתר הלקוח, בגיבוי מרכז השירות של MRC בחולון וצוותי השטח של Meteo-Tech לרשתות תחנות מטאורולוגיות.</p><div class="tags"><a class="tag t-mrc" href="he-mrc.html" lang="en">MRC Ltd</a><a class="tag t-mt" href="he-meteo-tech.html" lang="en">Meteo-Tech</a></div></li><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></span><h3>כיול מוסמך</h3><p>כיול לפי ISO/IEC 17025: מעבדת הכיול של Meteo-Tech בהסמכת A2LA, וכיול מכשירי מטוטלת של Munro בהסמכת UKAS.</p><div class="tags"><a class="tag t-mt" href="he-meteo-tech.html" lang="en">Meteo-Tech</a><a class="tag t-mi" href="he-munro-instruments.html" lang="en">Munro Instruments</a></div></li><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></span><h3>בדיקות מוסמכות</h3><p>בדיקות החלקה של רצפות בהסמכת UKAS (מעבדה מס׳ 21691).</p><div class="tags"><a class="tag t-mi" href="he-munro-instruments.html" lang="en">Munro Instruments</a></div></li><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z"/><path d="M5 19l7-7"/></svg></span><h3>ייעוץ סביבתי</h3><p>מודלים לפיזור מזהמים בטכנולוגיות מוגנות בפטנט, מטאורולוגיה משפטית וסקרים אקלימיים.</p><div class="tags"><a class="tag t-mt" href="he-meteo-tech.html" lang="en">Meteo-Tech</a></div></li><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 11a3.5 3.5 0 0 0 1 7z"/></svg></span><h3>תצפיות וחיזוי מזג אוויר</h3><p>שירותי תצפיות וחיזוי מזג אוויר.</p><div class="tags"><a class="tag t-mt" href="he-meteo-tech.html" lang="en">Meteo-Tech</a></div></li><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></span><h3>אספקה ותמיכה לאחר המכירה</h3><p>ייצוג של כ-50 יצרנים מובילים, ייצוא ללקוחות ביותר מ-70 מדינות, ושירות ותמיכה לאחר המכירה.</p><div class="tags"><a class="tag t-mrc" href="he-mrc.html" lang="en">MRC Ltd</a><a class="tag t-ms" href="he-munro-instruments.html#munro-scientific" lang="en">Munro Scientific</a></div></li></ul>
+      <ul class="tiles"><li><div class="t-img" style="--photo:url(images/services/installation.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5 5L4 17l3 3 5.7-5.7a4 4 0 0 0 5-5l-2.4 2.4-2.6-.7-.7-2.6z"/></svg></div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5 5L4 17l3 3 5.7-5.7a4 4 0 0 0 5-5l-2.4 2.4-2.6-.7-.7-2.6z"/></svg></span><h3>התקנה, תחזוקה ותיקון</h3><p>התקנה ושירות באתר הלקוח, בגיבוי מרכז השירות של MRC בחולון וצוותי השטח של Meteo-Tech Ltd לרשתות תחנות מטאורולוגיות.</p><div class="tags"><a class="tag t-mrc" href="he-mrc.html" lang="en">MRC Ltd</a><a class="tag t-mt" href="he-meteo-tech.html" lang="en">Meteo-Tech Ltd</a></div></li><li><div class="t-img" style="--photo:url(images/services/calibration.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></span><h3>כיול מוסמך</h3><p>כיול לפי ISO/IEC 17025: מעבדת הכיול של Meteo-Tech Ltd בהסמכת A2LA, וכיול מכשירי מטוטלת של Munro בהסמכת UKAS.</p><div class="tags"><a class="tag t-mt" href="he-meteo-tech.html" lang="en">Meteo-Tech Ltd</a><a class="tag t-mi" href="he-munro-instruments.html" lang="en">Munro Instruments Limited</a></div></li><li><div class="t-img" style="--photo:url(images/services/testing.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></span><h3>בדיקות מוסמכות</h3><p>בדיקות החלקה של רצפות בהסמכת UKAS (מעבדה מס׳ 21691).</p><div class="tags"><a class="tag t-mi" href="he-munro-instruments.html" lang="en">Munro Instruments Limited</a></div></li><li><div class="t-img" style="--photo:url(images/services/consulting.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z"/><path d="M5 19l7-7"/></svg></div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z"/><path d="M5 19l7-7"/></svg></span><h3>ייעוץ סביבתי</h3><p>מודלים לפיזור מזהמים בטכנולוגיות מוגנות בפטנט, מטאורולוגיה משפטית וסקרים אקלימיים.</p><div class="tags"><a class="tag t-mt" href="he-meteo-tech.html" lang="en">Meteo-Tech Ltd</a></div></li><li><div class="t-img" style="--photo:url(images/services/forecasting.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 11a3.5 3.5 0 0 0 1 7z"/></svg></div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 11a3.5 3.5 0 0 0 1 7z"/></svg></span><h3>תצפיות וחיזוי מזג אוויר</h3><p>שירותי תצפיות וחיזוי מזג אוויר.</p><div class="tags"><a class="tag t-mt" href="he-meteo-tech.html" lang="en">Meteo-Tech Ltd</a></div></li><li><div class="t-img" style="--photo:url(images/services/support.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></span><h3>אספקה ותמיכה לאחר המכירה</h3><p>ייצוג של כ-50 יצרנים מובילים, ייצוא ללקוחות ביותר מ-70 מדינות, ושירות ותמיכה לאחר המכירה.</p><div class="tags"><a class="tag t-mrc" href="he-mrc.html" lang="en">MRC Ltd</a><a class="tag t-ms" href="he-munro-instruments.html#munro-scientific" lang="en">Munro Scientific</a></div></li></ul>
       <p class="cta-line">מחפשים משהו מסוים? <a href="he-contact.html">שלחו לנו פנייה</a> והחברה המתאימה תחזור אליכם.</p>
     </div>
   </section>
@@ -333,9 +351,9 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
       <a class="ft-mail" href="mailto:info@mrc-group.net" dir="ltr">info@mrc-group.net</a>
     </div>
     <nav class="ft-col" aria-label="אודות"><h2>אודות</h2><ul>
-      <li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-team.html">הצוות שלנו</a></li><li><a href="he-quality.html">איכות והסמכות</a></li></ul></nav>
+      <li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-growth.html">הצמיחה שלנו</a></li><li><a href="he-team.html">הצוות שלנו</a></li><li><a href="he-quality.html">איכות והסמכות</a></li></ul></nav>
     <nav class="ft-col" aria-label="החברות שלנו"><h2>החברות שלנו</h2><ul lang="en">
-      <li><a href="he-mrc.html">MRC Ltd</a></li><li><a href="he-meteo-tech.html">Meteo-Tech</a></li><li><a href="he-munro-instruments.html">Munro Instruments</a></li></ul></nav>
+      <li><a href="he-mrc.html">MRC Ltd</a></li><li><a href="he-meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="he-munro-instruments.html">Munro Instruments Limited</a></li></ul></nav>
     <nav class="ft-col" aria-label="ניווט"><h2>ניווט</h2><ul>
       <li><a href="he-equipment.html">ציוד</a></li><li><a href="he-services.html">שירותים</a></li><li><a href="he-solutions.html">פתרונות</a></li><li><a href="he-locations.html">מיקומים</a></li><li><a href="he-contact.html">צור קשר</a></li></ul></nav>
   </div>

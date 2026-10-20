@@ -217,6 +217,14 @@ footer.site-footer .ft-bottom{display:flex;flex-wrap:wrap;justify-content:space-
 footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style:none;margin:0;padding:0}
 @media (max-width:860px){footer.site-footer .ft-grid{grid-template-columns:1fr 1fr}.ft-brand{grid-column:1/-1}}
 @media (max-width:480px){footer.site-footer .ft-grid{grid-template-columns:1fr}}
+
+/* language flags */
+.nav .lang{display:flex;align-items:center;gap:8px}
+.nav .flag{display:inline-flex;padding:3px;border-radius:5px;border-bottom:0!important;line-height:0}
+.nav .flag svg{width:26px;height:17px;border-radius:2px;box-shadow:0 0 0 1px rgba(10,35,72,.18)}
+.nav .flag.on{background:var(--soft);box-shadow:0 0 0 2px var(--teal)}
+.nav .flag:hover svg{transform:translateY(-1px)}
+@media (max-width:1180px){.nav .lang{padding:12px 0;gap:14px}.nav .lang .flag{border-bottom:0;padding:3px}}
 </style>
 </head>
 <body>
@@ -227,13 +235,13 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav aria-label="Main">
       <ul class="nav" id="nav">
-        <li class="has-sub"><a href="about.html" aria-haspopup="true">About<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="about.html">Group Overview</a></li><li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech</a></li><li><a href="munro-instruments.html">Munro Instruments</a></li><li><a href="team.html">Meet Our Team</a></li></ul></li>
+        <li class="has-sub"><a href="about.html" aria-haspopup="true">About<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="about.html">Group Overview</a></li><li><a href="growth.html">Our Growth</a></li><li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="munro-instruments.html">Munro Instruments Limited</a></li><li><a href="team.html">Meet Our Team</a></li></ul></li>
         <li><a href="equipment.html">Equipment</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="streams.html">Solutions</a></li>
         <li><a href="locations.html">Locations</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="he.html" lang="he" hreflang="he">עברית</a></li>
+        <li class="lang"><a class="flag on" href="disclaimer.html" lang="en" hreflang="en" aria-label="English" aria-current="true"><svg viewBox="0 0 60 30" aria-hidden="true"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#C8102E" stroke-width="2.4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a><a class="flag" href="he.html" lang="he" hreflang="he" aria-label="עברית"><svg viewBox="0 0 44 32" aria-hidden="true"><path fill="#fff" d="M0 0h44v32H0z"/><path fill="#0038B8" d="M0 3h44v4.5H0zM0 24.5h44V29H0z"/><path fill="none" stroke="#0038B8" stroke-width="1.6" d="M22 9.6l5.6 9.7H16.4zM22 22.4l-5.6-9.7h11.2z"/></svg></a></li>
       </ul>
     </nav>
   </div>
@@ -245,17 +253,17 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
     <p class="updated">Last updated: October 2026</p>
 
 <p>This website is operated by M.R.C. (Rachmanov-Bukshtein) Ltd., company no. 511525123, Hagavish 3, Holon 5881702, Israel. It presents general information about MRC Group and its operating companies.</p>
-<h2>General information only</h2>
+<h2>General Information Only</h2>
 <p>The content on this website is provided for general information. It does not constitute an offer, a binding commitment, or professional, technical or legal advice. Product specifications, services and prices are provided only by each operating company, on its own website or in its own quotations.</p>
 <h2>Accuracy</h2>
 <p>We make reasonable efforts to keep the information on this website accurate and up to date. However, we do not warrant that it is complete, accurate or current, and we may change it at any time without notice.</p>
-<h2>Links to other websites</h2>
+<h2>Links To Other Websites</h2>
 <p>This website links to the websites of our operating companies and to other external sites. Each of those websites is responsible for its own content and its own privacy and cookie practices.</p>
-<h2>Limitation of liability</h2>
+<h2>Limitation Of Liability</h2>
 <p>To the extent permitted by law, MRC Group is not liable for any loss or damage arising from the use of this website or from reliance on its content.</p>
-<h2>Intellectual property</h2>
+<h2>Intellectual Property</h2>
 <p>The text, design and the MRC Group name and logo are the property of MRC Group or its operating companies. Company logos belong to the respective companies. Certification and accreditation marks belong to the issuing bodies and are displayed only to indicate certifications held. You may not copy or reuse content from this website for commercial purposes without written permission.</p>
-<h2>Governing law</h2>
+<h2>Governing Law</h2>
 <p>This disclaimer is governed by the laws of the State of Israel. The competent courts in Tel Aviv-Yafo have exclusive jurisdiction over any dispute relating to this website.</p>
 <h2>Contact</h2>
 <p>For questions about this disclaimer, please contact us at <a href="mailto:info@mrc-group.net">info@mrc-group.net</a> or +972-3-5595252.</p>
@@ -270,9 +278,9 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
       <a class="ft-mail" href="mailto:info@mrc-group.net">info@mrc-group.net</a>
     </div>
     <nav class="ft-col" aria-label="About"><h2>About</h2><ul>
-      <li><a href="about.html">Group Overview</a></li><li><a href="team.html">Meet Our Team</a></li><li><a href="quality.html">Quality &amp; Accreditations</a></li></ul></nav>
+      <li><a href="about.html">Group Overview</a></li><li><a href="growth.html">Our Growth</a></li><li><a href="team.html">Meet Our Team</a></li><li><a href="quality.html">Quality &amp; Accreditations</a></li></ul></nav>
     <nav class="ft-col" aria-label="Our companies"><h2>Our Companies</h2><ul>
-      <li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech</a></li><li><a href="munro-instruments.html">Munro Instruments</a></li></ul></nav>
+      <li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="munro-instruments.html">Munro Instruments Limited</a></li></ul></nav>
     <nav class="ft-col" aria-label="Explore"><h2>Explore</h2><ul>
       <li><a href="equipment.html">Equipment</a></li><li><a href="services.html">Services</a></li><li><a href="streams.html">Solutions</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
   </div>

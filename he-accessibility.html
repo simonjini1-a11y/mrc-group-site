@@ -247,6 +247,14 @@ html[dir="rtl"] .marquee{direction:ltr}
 html[dir="rtl"] .services,html[dir="rtl"] .dept ul{padding-left:0;padding-right:20px}
 html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
 .ltr{direction:ltr;unicode-bidi:isolate}
+
+/* language flags */
+.nav .lang{display:flex;align-items:center;gap:8px}
+.nav .flag{display:inline-flex;padding:3px;border-radius:5px;border-bottom:0!important;line-height:0}
+.nav .flag svg{width:26px;height:17px;border-radius:2px;box-shadow:0 0 0 1px rgba(10,35,72,.18)}
+.nav .flag.on{background:var(--soft);box-shadow:0 0 0 2px var(--teal)}
+.nav .flag:hover svg{transform:translateY(-1px)}
+@media (max-width:1180px){.nav .lang{padding:12px 0;gap:14px}.nav .lang .flag{border-bottom:0;padding:3px}}
 </style>
 </head>
 <body>
@@ -257,13 +265,13 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">תפריט</button>
     <nav aria-label="ראשי">
       <ul class="nav" id="nav">
-        <li class="has-sub"><a href="he-about.html" aria-haspopup="true">אודות<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-mrc.html" lang="en">MRC Ltd</a></li><li><a href="he-meteo-tech.html" lang="en">Meteo-Tech</a></li><li><a href="he-munro-instruments.html" lang="en">Munro Instruments</a></li><li><a href="he-team.html">הצוות שלנו</a></li></ul></li>
+        <li class="has-sub"><a href="he-about.html" aria-haspopup="true">אודות<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-growth.html">הצמיחה שלנו</a></li><li><a href="he-mrc.html" lang="en">MRC Ltd</a></li><li><a href="he-meteo-tech.html" lang="en">Meteo-Tech Ltd</a></li><li><a href="he-munro-instruments.html" lang="en">Munro Instruments Limited</a></li><li><a href="he-team.html">הצוות שלנו</a></li></ul></li>
         <li><a href="he-equipment.html">ציוד</a></li>
         <li><a href="he-services.html">שירותים</a></li>
         <li><a href="he-solutions.html">פתרונות</a></li>
         <li><a href="he-locations.html">מיקומים</a></li>
         <li><a href="he-contact.html">צור קשר</a></li>
-        <li><a href="accessibility.html" lang="en" hreflang="en">English</a></li>
+        <li class="lang"><a class="flag" href="accessibility.html" lang="en" hreflang="en" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#C8102E" stroke-width="2.4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a><a class="flag on" href="he-accessibility.html" lang="he" hreflang="he" aria-label="עברית" aria-current="true"><svg viewBox="0 0 44 32" aria-hidden="true"><path fill="#fff" d="M0 0h44v32H0z"/><path fill="#0038B8" d="M0 3h44v4.5H0zM0 24.5h44V29H0z"/><path fill="none" stroke="#0038B8" stroke-width="1.6" d="M22 9.6l5.6 9.7H16.4zM22 22.4l-5.6-9.7h11.2z"/></svg></a></li>
       </ul>
     </nav>
   </div>
@@ -307,9 +315,9 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
       <a class="ft-mail" href="mailto:info@mrc-group.net" dir="ltr">info@mrc-group.net</a>
     </div>
     <nav class="ft-col" aria-label="אודות"><h2>אודות</h2><ul>
-      <li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-team.html">הצוות שלנו</a></li><li><a href="he-quality.html">איכות והסמכות</a></li></ul></nav>
+      <li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-growth.html">הצמיחה שלנו</a></li><li><a href="he-team.html">הצוות שלנו</a></li><li><a href="he-quality.html">איכות והסמכות</a></li></ul></nav>
     <nav class="ft-col" aria-label="החברות שלנו"><h2>החברות שלנו</h2><ul lang="en">
-      <li><a href="he-mrc.html">MRC Ltd</a></li><li><a href="he-meteo-tech.html">Meteo-Tech</a></li><li><a href="he-munro-instruments.html">Munro Instruments</a></li></ul></nav>
+      <li><a href="he-mrc.html">MRC Ltd</a></li><li><a href="he-meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="he-munro-instruments.html">Munro Instruments Limited</a></li></ul></nav>
     <nav class="ft-col" aria-label="ניווט"><h2>ניווט</h2><ul>
       <li><a href="he-equipment.html">ציוד</a></li><li><a href="he-services.html">שירותים</a></li><li><a href="he-solutions.html">פתרונות</a></li><li><a href="he-locations.html">מיקומים</a></li><li><a href="he-contact.html">צור קשר</a></li></ul></nav>
   </div>

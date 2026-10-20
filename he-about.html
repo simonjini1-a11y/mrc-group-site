@@ -271,6 +271,51 @@ html[dir="rtl"] .marquee{direction:ltr}
 html[dir="rtl"] .services,html[dir="rtl"] .dept ul{padding-left:0;padding-right:20px}
 html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
 .ltr{direction:ltr;unicode-bidi:isolate}
+
+.hs{background:linear-gradient(180deg,#F6F8FB,#fff);padding:80px 0 96px}
+.hs-head{text-align:center}
+.hs-head h2{font-size:clamp(1.5rem,2.6vw,2rem);color:var(--navy)}
+.hs-head .rule{display:block;width:56px;height:3px;background:#4FB3D9;margin:14px auto 0;border-radius:2px}
+.hs-head p{margin:12px 0 0;color:var(--muted);font-weight:700;letter-spacing:.02em}
+.hs-tree{margin-top:44px;display:flex;flex-direction:column;align-items:center}
+.hs-parent{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;text-decoration:none;color:#fff;background:linear-gradient(135deg,#0A2348,#16386B);border-radius:18px;padding:26px 40px;min-width:min(440px,100%);box-shadow:0 20px 44px -24px rgba(10,35,72,.6)}
+.hs-parent strong{font-size:1.6rem;letter-spacing:.01em}
+.hs-parent .hs-badge{background:rgba(79,179,217,.2);color:#BFE6F5}
+.hs-parent .hs-meta{color:#C9D8EA;font-weight:600}
+.hs-parent .hs-desc{color:#9FD3EA;font-size:.95rem}
+.hs-parent::after{content:"";position:absolute;left:50%;top:100%;width:2px;height:40px;background:#C3D0E0}
+.hs-kids{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:32px;width:100%;margin-top:40px;padding-top:40px}
+.hs-kids::before{content:"";position:absolute;top:0;left:25%;right:25%;height:2px;background:#C3D0E0}
+.hs-kid{position:relative;display:flex;flex-direction:column;align-items:center;--c:#1F5FBF}
+.hs-kid.meteo{--c:#2E7D32}.hs-kid.munro{--c:#C8282E}
+.hs-kid::before{content:"";position:absolute;left:50%;top:-40px;width:2px;height:40px;background:#C3D0E0}
+.hs-own{position:relative;margin:-12px 0 14px;background:#fff;border:1.5px solid var(--c);color:var(--c);font-weight:800;font-size:.8rem;padding:4px 12px;border-radius:999px;letter-spacing:.02em}
+.hs-card{width:100%;height:100%;background:#fff;border:1px solid var(--line);border-top:4px solid var(--c);border-radius:16px;padding:24px 26px;box-shadow:0 16px 36px -26px rgba(10,35,72,.5)}
+.hs-badge{display:inline-block;font-size:.76rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--c);background:color-mix(in srgb,var(--c) 10%,#fff);padding:4px 10px;border-radius:6px}
+.hs-chip{display:inline-block;margin-inline-start:8px;font-size:.76rem;font-weight:800;color:#5B2A86;background:#F2ECF8;padding:4px 10px;border-radius:6px}
+.hs-card h3{margin-top:12px;font-size:1.3rem}
+.hs-card h3 a{color:var(--navy);text-decoration:none}
+.hs-card h3 a:hover{text-decoration:underline}
+.hs-card .hs-meta{margin:4px 0 0;color:var(--muted);font-weight:600;font-size:.93rem}
+.hs-sc{margin:16px 0 8px;font-weight:800;font-size:.85rem;color:var(--ink)}
+.hs-card ul{margin:0;padding-inline-start:20px;display:grid;gap:5px;color:var(--ink)}
+.hs-mk{margin:16px 0 0;padding:10px 14px;border-radius:10px;background:color-mix(in srgb,var(--c) 8%,#fff);font-size:.93rem;color:var(--ink)}
+.hs-divs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hs-divs>div{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#FCFDFE}
+.hs-divs span{font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
+.hs-divs h4{margin:4px 0 8px;font-size:1rem;color:var(--navy)}
+.hs-divs ul{font-size:.92rem}
+.hs-gov{margin:36px auto 0;max-width:80ch;text-align:center;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 20px}
+@media (max-width:900px){.hs-kids{grid-template-columns:1fr;gap:44px}.hs-kids::before{display:none}.hs-kid::before{top:-44px;height:44px}.hs-kid.munro::before{display:none}}
+@media (max-width:560px){.hs-divs{grid-template-columns:1fr}.hs-parent{padding:22px 20px}}
+
+/* language flags */
+.nav .lang{display:flex;align-items:center;gap:8px}
+.nav .flag{display:inline-flex;padding:3px;border-radius:5px;border-bottom:0!important;line-height:0}
+.nav .flag svg{width:26px;height:17px;border-radius:2px;box-shadow:0 0 0 1px rgba(10,35,72,.18)}
+.nav .flag.on{background:var(--soft);box-shadow:0 0 0 2px var(--teal)}
+.nav .flag:hover svg{transform:translateY(-1px)}
+@media (max-width:1180px){.nav .lang{padding:12px 0;gap:14px}.nav .lang .flag{border-bottom:0;padding:3px}}
 </style>
 </head>
 <body>
@@ -282,13 +327,13 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">תפריט</button>
     <nav aria-label="ראשי">
       <ul class="nav" id="nav">
-        <li class="has-sub is-current"><a href="he-about.html" aria-haspopup="true">אודות<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="he-about.html" aria-current="page">סקירת הקבוצה</a></li><li><a href="he-mrc.html" lang="en">MRC Ltd</a></li><li><a href="he-meteo-tech.html" lang="en">Meteo-Tech</a></li><li><a href="he-munro-instruments.html" lang="en">Munro Instruments</a></li><li><a href="he-team.html">הצוות שלנו</a></li></ul></li>
+        <li class="has-sub is-current"><a href="he-about.html" aria-haspopup="true">אודות<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="he-about.html" aria-current="page">סקירת הקבוצה</a></li><li><a href="he-growth.html">הצמיחה שלנו</a></li><li><a href="he-mrc.html" lang="en">MRC Ltd</a></li><li><a href="he-meteo-tech.html" lang="en">Meteo-Tech Ltd</a></li><li><a href="he-munro-instruments.html" lang="en">Munro Instruments Limited</a></li><li><a href="he-team.html">הצוות שלנו</a></li></ul></li>
         <li><a href="he-equipment.html">ציוד</a></li>
         <li><a href="he-services.html">שירותים</a></li>
         <li><a href="he-solutions.html">פתרונות</a></li>
         <li><a href="he-locations.html">מיקומים</a></li>
         <li><a href="he-contact.html">צור קשר</a></li>
-        <li><a href="about.html" lang="en" hreflang="en">English</a></li>
+        <li class="lang"><a class="flag" href="about.html" lang="en" hreflang="en" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#C8102E" stroke-width="2.4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a><a class="flag on" href="he-about.html" lang="he" hreflang="he" aria-label="עברית" aria-current="true"><svg viewBox="0 0 44 32" aria-hidden="true"><path fill="#fff" d="M0 0h44v32H0z"/><path fill="#0038B8" d="M0 3h44v4.5H0zM0 24.5h44V29H0z"/><path fill="none" stroke="#0038B8" stroke-width="1.6" d="M22 9.6l5.6 9.7H16.4zM22 22.4l-5.6-9.7h11.2z"/></svg></a></li>
       </ul>
     </nav>
   </div>
@@ -297,7 +342,6 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
 <main id="main" class="inner">
   <div class="page-head">
     <div class="wrap">
-      <div class="crumb"><a href="he.html">דף הבית</a> ‹ סקירת הקבוצה</div>
       <h1>סקירת הקבוצה</h1>
     </div>
   </div>
@@ -314,6 +358,24 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
       </div>
     </div>
   </section>
+  <section class="hs" aria-labelledby="hs-h">
+    <div class="wrap">
+      <div class="hs-head"><h2 id="hs-h">מבנה האחזקות והפעילות של הקבוצה</h2><span class="rule" aria-hidden="true"></span><p>3 ישויות משפטיות · 4 חטיבות שוק</p></div>
+      <div class="hs-tree">
+        <a class="hs-parent" href="he-mrc.html"><span class="hs-badge">חברת האם והחזקות הקבוצה</span><strong lang="en">M.R.C. Ltd</strong><span class="hs-meta">חולון, ישראל · נוסדה ב-1989</span><span class="hs-desc">מרכז לוגיסטיקה, מו״פ וייצוא גלובלי</span></a>
+        <div class="hs-kids">
+          <div class="hs-kid meteo"><span class="hs-own">100% בעלות</span>
+            <div class="hs-card"><span class="hs-badge">ישות משפטית 02 · חברה בת בבעלות מלאה</span><h3><a href="he-meteo-tech.html" lang="en">Meteo-Tech Ltd</a></h3><p class="hs-meta">בני ברק, ישראל · נרכשה ב-2023</p>
+              <p class="hs-sc">תחום פעילות</p><ul><li>תחנות מטאורולוגיות אוטומטיות (AWS) עד מפתח</li><li>מערכי חיישנים סביבתיים, הידרולוגיים וסולאריים</li><li>פיזור מזהמים ותקשורת נתונים בזמן אמת לאיכות אוויר</li></ul><p class="hs-mk"><b>שוק עיקרי:</b> שירותים מטאורולוגיים לאומיים, נמלים, ביטחון ואנרגיה</p></div></div>
+          <div class="hs-kid munro"><span class="hs-own">100% בעלות</span>
+            <div class="hs-card"><span class="hs-badge">ישות משפטית 03 · חברה בת בבעלות מלאה</span><span class="hs-chip" lang="en">UKAS ISO 17025 (#21691)</span><h3><a href="he-munro-instruments.html" lang="en">Munro Instruments Limited</a></h3><p class="hs-meta">הארלו, אסקס, בריטניה · נוסדה ב-1864 · בעלות מלאה על המתקן</p>
+              <p class="hs-sc">שתי חטיבות פעילות מסחרית (ישות משפטית אחת בבריטניה) · הנהלה ומעבדה משותפות</p>
+              <div class="hs-divs"><div><span>חטיבה 01</span><h4 lang="en">Munro Instruments</h4><ul><li>בדיקות החלקה ואחיזה ניידות</li><li>מערכות איכות אוויר ומזג אוויר</li><li>מטרולוגיית שטח מוסמכת UKAS</li></ul></div><div><span>חטיבה 02</span><h4 lang="en">Munro Scientific</h4><ul><li>ציוד מעבדה שולחני</li><li>מאזניים אנליטיים ומדידה</li><li>פתרונות לחדרים נקיים ולתעשייה</li></ul></div></div></div></div>
+        </div>
+      </div>
+      <p class="hs-gov"><b>סיכום ממשל תאגידי:</b> 3 חברות רשומות (ישראל ובריטניה). <span lang="en">Munro Scientific</span> פועלת כחטיבת סחר ייעודית של <span lang="en">Munro Instruments Limited</span>.</p>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
   <div class="wrap ft-grid">
@@ -323,9 +385,9 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
       <a class="ft-mail" href="mailto:info@mrc-group.net" dir="ltr">info@mrc-group.net</a>
     </div>
     <nav class="ft-col" aria-label="אודות"><h2>אודות</h2><ul>
-      <li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-team.html">הצוות שלנו</a></li><li><a href="he-quality.html">איכות והסמכות</a></li></ul></nav>
+      <li><a href="he-about.html">סקירת הקבוצה</a></li><li><a href="he-growth.html">הצמיחה שלנו</a></li><li><a href="he-team.html">הצוות שלנו</a></li><li><a href="he-quality.html">איכות והסמכות</a></li></ul></nav>
     <nav class="ft-col" aria-label="החברות שלנו"><h2>החברות שלנו</h2><ul lang="en">
-      <li><a href="he-mrc.html">MRC Ltd</a></li><li><a href="he-meteo-tech.html">Meteo-Tech</a></li><li><a href="he-munro-instruments.html">Munro Instruments</a></li></ul></nav>
+      <li><a href="he-mrc.html">MRC Ltd</a></li><li><a href="he-meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="he-munro-instruments.html">Munro Instruments Limited</a></li></ul></nav>
     <nav class="ft-col" aria-label="ניווט"><h2>ניווט</h2><ul>
       <li><a href="he-equipment.html">ציוד</a></li><li><a href="he-services.html">שירותים</a></li><li><a href="he-solutions.html">פתרונות</a></li><li><a href="he-locations.html">מיקומים</a></li><li><a href="he-contact.html">צור קשר</a></li></ul></nav>
   </div>

@@ -220,6 +220,14 @@ footer.site-footer .ft-bottom{display:flex;flex-wrap:wrap;justify-content:space-
 footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style:none;margin:0;padding:0}
 @media (max-width:860px){footer.site-footer .ft-grid{grid-template-columns:1fr 1fr}.ft-brand{grid-column:1/-1}}
 @media (max-width:480px){footer.site-footer .ft-grid{grid-template-columns:1fr}}
+
+/* language flags */
+.nav .lang{display:flex;align-items:center;gap:8px}
+.nav .flag{display:inline-flex;padding:3px;border-radius:5px;border-bottom:0!important;line-height:0}
+.nav .flag svg{width:26px;height:17px;border-radius:2px;box-shadow:0 0 0 1px rgba(10,35,72,.18)}
+.nav .flag.on{background:var(--soft);box-shadow:0 0 0 2px var(--teal)}
+.nav .flag:hover svg{transform:translateY(-1px)}
+@media (max-width:1180px){.nav .lang{padding:12px 0;gap:14px}.nav .lang .flag{border-bottom:0;padding:3px}}
 </style>
 </head>
 <body>
@@ -230,13 +238,13 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav aria-label="Main">
       <ul class="nav" id="nav">
-        <li class="has-sub"><a href="about.html" aria-haspopup="true">About<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="about.html">Group Overview</a></li><li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech</a></li><li><a href="munro-instruments.html">Munro Instruments</a></li><li><a href="team.html">Meet Our Team</a></li></ul></li>
+        <li class="has-sub"><a href="about.html" aria-haspopup="true">About<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="about.html">Group Overview</a></li><li><a href="growth.html">Our Growth</a></li><li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="munro-instruments.html">Munro Instruments Limited</a></li><li><a href="team.html">Meet Our Team</a></li></ul></li>
         <li><a href="equipment.html">Equipment</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="streams.html">Solutions</a></li>
         <li><a href="locations.html">Locations</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="he-accessibility.html" lang="he" hreflang="he">עברית</a></li>
+        <li class="lang"><a class="flag on" href="accessibility.html" lang="en" hreflang="en" aria-label="English" aria-current="true"><svg viewBox="0 0 60 30" aria-hidden="true"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#C8102E" stroke-width="2.4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a><a class="flag" href="he-accessibility.html" lang="he" hreflang="he" aria-label="עברית"><svg viewBox="0 0 44 32" aria-hidden="true"><path fill="#fff" d="M0 0h44v32H0z"/><path fill="#0038B8" d="M0 3h44v4.5H0zM0 24.5h44V29H0z"/><path fill="none" stroke="#0038B8" stroke-width="1.6" d="M22 9.6l5.6 9.7H16.4zM22 22.4l-5.6-9.7h11.2z"/></svg></a></li>
       </ul>
     </nav>
   </div>
@@ -248,7 +256,7 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
     <p class="updated">Last updated: October 2026</p>
 
 <p>MRC Group wants this website to be usable by everyone, including people with disabilities. We have worked to make it accessible in line with the Israeli Equal Rights for Persons with Disabilities (Service Accessibility Adjustments) Regulations, 5773-2013, and Israeli Standard IS 5568, which is based on the Web Content Accessibility Guidelines (WCAG) 2.0 at level AA.</p>
-<h2>What we have done</h2>
+<h2>What We Have Done</h2>
 <ul>
 <li>The site works with keyboard navigation, with a visible focus indicator on links and buttons.</li>
 <li>A "Skip to content" link lets keyboard and screen reader users bypass the menu.</li>
@@ -258,16 +266,16 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
 <li>The layout adapts to phones, tablets and desktop screens, and supports browser zoom up to 200%.</li>
 <li>Smooth scrolling is turned off for users who set their system to reduce motion.</li>
 </ul>
-<h2>Known limitations</h2>
+<h2>Known Limitations</h2>
 <p>Some external websites linked from this site, including our operating companies' sites, are managed separately and may not meet the same level of accessibility. Certification logos are images supplied by the issuing bodies, and each has a text description next to it.</p>
 <p>If you find a page or element that is hard to use, please let us know and we will work to fix it.</p>
-<h2>Accessibility coordinator</h2>
+<h2>Accessibility Coordinator</h2>
 <p>Name: Simon Jini, CTO<br>
 Phone: <a href="tel:+97235595252" dir="ltr">+972-3-5595252</a><br>
 Email: <a href="mailto:info@mrc-group.net">info@mrc-group.net</a><br>
 Address: Hagavish 3, Holon 5881702, Israel</p>
 <p>When you contact us, please describe the problem and the page where it occurred, and tell us which browser and assistive technology you use, if any.</p>
-<h2>Physical accessibility</h2>
+<h2>Physical Accessibility</h2>
 <p>For information about physical access to our offices and the services available there, please contact the accessibility coordinator.</p>
 <p class="updated">This statement was prepared in October 2026. <a href="he-accessibility.html" lang="he">הצהרת נגישות בעברית</a></p>
 
@@ -281,9 +289,9 @@ Address: Hagavish 3, Holon 5881702, Israel</p>
       <a class="ft-mail" href="mailto:info@mrc-group.net">info@mrc-group.net</a>
     </div>
     <nav class="ft-col" aria-label="About"><h2>About</h2><ul>
-      <li><a href="about.html">Group Overview</a></li><li><a href="team.html">Meet Our Team</a></li><li><a href="quality.html">Quality &amp; Accreditations</a></li></ul></nav>
+      <li><a href="about.html">Group Overview</a></li><li><a href="growth.html">Our Growth</a></li><li><a href="team.html">Meet Our Team</a></li><li><a href="quality.html">Quality &amp; Accreditations</a></li></ul></nav>
     <nav class="ft-col" aria-label="Our companies"><h2>Our Companies</h2><ul>
-      <li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech</a></li><li><a href="munro-instruments.html">Munro Instruments</a></li></ul></nav>
+      <li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="munro-instruments.html">Munro Instruments Limited</a></li></ul></nav>
     <nav class="ft-col" aria-label="Explore"><h2>Explore</h2><ul>
       <li><a href="equipment.html">Equipment</a></li><li><a href="services.html">Services</a></li><li><a href="streams.html">Solutions</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
   </div>

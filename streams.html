@@ -237,6 +237,30 @@ footer.site-footer .ft-bottom{display:flex;flex-wrap:wrap;justify-content:space-
 footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style:none;margin:0;padding:0}
 @media (max-width:860px){footer.site-footer .ft-grid{grid-template-columns:1fr 1fr}.ft-brand{grid-column:1/-1}}
 @media (max-width:480px){footer.site-footer .ft-grid{grid-template-columns:1fr}}
+
+/* language flags */
+.nav .lang{display:flex;align-items:center;gap:8px}
+.nav .flag{display:inline-flex;padding:3px;border-radius:5px;border-bottom:0!important;line-height:0}
+.nav .flag svg{width:26px;height:17px;border-radius:2px;box-shadow:0 0 0 1px rgba(10,35,72,.18)}
+.nav .flag.on{background:var(--soft);box-shadow:0 0 0 2px var(--teal)}
+.nav .flag:hover svg{transform:translateY(-1px)}
+@media (max-width:1180px){.nav .lang{padding:12px 0;gap:14px}.nav .lang .flag{border-bottom:0;padding:3px}}
+
+.tiles li{overflow:hidden}
+.t-img{position:relative;margin:-28px -28px 22px;height:180px;background:var(--photo) center/cover no-repeat,linear-gradient(140deg,#0A2348,#16386B 55%,#2A8DB4)}
+.t-img:not(.has){background:linear-gradient(140deg,#0A2348,#16386B 55%,#2A8DB4)}
+.t-img:not(.has)::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(79,179,217,.35),transparent 55%),radial-gradient(circle at 15% 90%,rgba(255,255,255,.08),transparent 45%)}
+.t-img .big{position:absolute;right:22px;bottom:14px;width:92px;height:92px;fill:none;stroke:rgba(255,255,255,.22);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.t-img.has .big{display:none}
+.tiles .t-img+.ic{margin-top:-46px;position:relative;background:#fff;box-shadow:0 8px 20px -10px rgba(10,35,72,.4)}
+html[dir="rtl"] .t-img .big{right:auto;left:22px}
+.stream{overflow:hidden}
+.stream .t-img{margin:-28px -28px 20px}
+
+.streams{gap:24px;border-top:0}
+.stream,html[dir="rtl"] .stream{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;margin:0;box-shadow:0 10px 30px -22px rgba(10,35,72,.4)}
+.stream h3{color:var(--navy)}
+@media (max-width:900px){.stream{border-bottom:1px solid var(--line)}}
 </style>
 </head>
 <body>
@@ -248,13 +272,13 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav aria-label="Main">
       <ul class="nav" id="nav">
-        <li class="has-sub"><a href="about.html" aria-haspopup="true">About<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="about.html">Group Overview</a></li><li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech</a></li><li><a href="munro-instruments.html">Munro Instruments</a></li><li><a href="team.html">Meet Our Team</a></li></ul></li>
+        <li class="has-sub"><a href="about.html" aria-haspopup="true">About<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="about.html">Group Overview</a></li><li><a href="growth.html">Our Growth</a></li><li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="munro-instruments.html">Munro Instruments Limited</a></li><li><a href="team.html">Meet Our Team</a></li></ul></li>
         <li><a href="equipment.html">Equipment</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="streams.html" aria-current="page">Solutions</a></li>
         <li><a href="locations.html">Locations</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="he-solutions.html" lang="he" hreflang="he">עברית</a></li>
+        <li class="lang"><a class="flag on" href="streams.html" lang="en" hreflang="en" aria-label="English" aria-current="true"><svg viewBox="0 0 60 30" aria-hidden="true"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#C8102E" stroke-width="2.4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a><a class="flag" href="he-solutions.html" lang="he" hreflang="he" aria-label="עברית"><svg viewBox="0 0 44 32" aria-hidden="true"><path fill="#fff" d="M0 0h44v32H0z"/><path fill="#0038B8" d="M0 3h44v4.5H0zM0 24.5h44V29H0z"/><path fill="none" stroke="#0038B8" stroke-width="1.6" d="M22 9.6l5.6 9.7H16.4zM22 22.4l-5.6-9.7h11.2z"/></svg></a></li>
       </ul>
     </nav>
   </div>
@@ -263,29 +287,28 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
 <main id="main" class="inner">
   <div class="page-head">
     <div class="wrap">
-      <div class="crumb"><a href="./">Home</a> › Solutions</div>
       <h1>Solutions</h1>
       <p>The markets our companies serve.</p>
     </div>
   </div>
   <section id="streams">
-    <h2 class="sr-only">Our markets</h2>
+    <h2 class="sr-only">Our Markets</h2>
     <div class="wrap">
       
       <div class="streams">
-        <div class="stream">
+        <div class="stream"><div class="t-img has" style="--photo:url(images/solutions/laboratory.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L5 18a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9V3"/></svg></div>
           <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M12 4h8M13 4v9L6 26a2 2 0 0 0 2 3h16a2 2 0 0 0 2-3l-7-13V4"/><path d="M9 21h14"/></svg>
           <h3>Laboratory Equipment</h3><p>Balances, incubators, centrifuges, temperature control and general laboratory equipment for research and education.</p>
         </div>
-        <div class="stream">
+        <div class="stream"><div class="t-img has" style="--photo:url(images/solutions/instrumentation.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 18l4-6"/></svg></div>
           <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="13" r="7"/><path d="M16 20v8M10 28h12M16 9v4l3 2"/></svg>
           <h3>Scientific Instrumentation</h3><p>Analytical and measuring instruments for research, industry and quality control.</p>
         </div>
-        <div class="stream">
+        <div class="stream"><div class="t-img has" style="--photo:url(images/solutions/environmental.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 12h15a3 3 0 1 1-3 3"/><path d="M3 16h7"/></svg></div>
           <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 12h15a4 4 0 1 0-4-4M4 18h21a4 4 0 1 1-4 4M4 24h9"/></svg>
           <h3>Environmental Measurement</h3><p>Weather stations, meteorological sensors and air samplers for environmental monitoring.</p>
         </div>
-        <div class="stream">
+        <div class="stream"><div class="t-img" style="--photo:url(images/solutions/industrial.jpg)" aria-hidden="true"><svg class="big" viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l5 3V9l5 3V5h4v16"/></svg></div>
           <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="4"/><path d="M16 4v4M16 24v4M4 16h4M24 16h4M7.5 7.5l2.8 2.8M21.7 21.7l2.8 2.8M7.5 24.5l2.8-2.8M21.7 10.3l2.8-2.8"/></svg>
           <h3>Industrial Solutions</h3><p>Material testing, slip and skid resistance testing and industrial monitoring.</p>
         </div>
@@ -301,9 +324,9 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
       <a class="ft-mail" href="mailto:info@mrc-group.net">info@mrc-group.net</a>
     </div>
     <nav class="ft-col" aria-label="About"><h2>About</h2><ul>
-      <li><a href="about.html">Group Overview</a></li><li><a href="team.html">Meet Our Team</a></li><li><a href="quality.html">Quality &amp; Accreditations</a></li></ul></nav>
+      <li><a href="about.html">Group Overview</a></li><li><a href="growth.html">Our Growth</a></li><li><a href="team.html">Meet Our Team</a></li><li><a href="quality.html">Quality &amp; Accreditations</a></li></ul></nav>
     <nav class="ft-col" aria-label="Our companies"><h2>Our Companies</h2><ul>
-      <li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech</a></li><li><a href="munro-instruments.html">Munro Instruments</a></li></ul></nav>
+      <li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="munro-instruments.html">Munro Instruments Limited</a></li></ul></nav>
     <nav class="ft-col" aria-label="Explore"><h2>Explore</h2><ul>
       <li><a href="equipment.html">Equipment</a></li><li><a href="services.html">Services</a></li><li><a href="streams.html">Solutions</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
   </div>
