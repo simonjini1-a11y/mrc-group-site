@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- seo-sec -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'sha256-lFgpoMKIuvyOnovT73ydDZePBugBy+plNXQab1iACGU='; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MRC Group">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Catalog Library | MRC Group">
+<meta property="og:description" content="Download MRC Group product catalogs, brochures and technical datasheets across 3,000+ laboratory and testing instruments.">
+<meta property="og:url" content="https://mrc-group.net/catalogs.html">
+<meta property="og:image" content="https://mrc-group.net/favicon.png">
+<!-- /seo-sec -->
+<title>Catalog Library | MRC Group</title>
+<meta name="description" content="Download MRC Group product catalogs, brochures and technical datasheets across 3,000+ laboratory and testing instruments.">
+<link rel="canonical" href="https://mrc-group.net/catalogs.html">
+<link rel="alternate" hreflang="en" href="https://mrc-group.net/about.html">
+<link rel="alternate" hreflang="he" href="https://mrc-group.net/he-about.html">
+<link rel="alternate" hreflang="x-default" href="https://mrc-group.net/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A2348; --navy-2:#102F5E; --blue:#1F3C88; --teal:#2A8DB4;
+  --ink:#16202E; --muted:#56637A; --line:#DDE3EC; --soft:#F3F6FA; --bg:#FFFFFF;
+  --font:"Manrope", "Segoe UI", Arial, Helvetica, sans-serif;
+  --wrap:1180px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{line-height:1.2;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,2.6vw,2.1rem);font-weight:800;color:var(--navy)}
+.lede{color:var(--muted);max-width:62ch;margin:14px 0 0}
+section{padding:88px 0}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 14px;z-index:100}
+.skip:focus{left:8px}
+
+/* Placeholder content still to be supplied by the client.
+   To hide the highlight, delete the .ph rule below. */
+.ph{outline:1.5px dashed #C9A227;outline-offset:3px;border-radius:3px}
+
+/* Header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.brand img{height:30px;width:auto}
+.site-header nav{margin-left:auto}
+.nav{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-bottom-color:var(--teal)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font:600 .95rem var(--font);color:var(--navy);cursor:pointer}
+@media (max-width:900px){
+  .menu-btn{display:block;margin-left:auto}
+  .nav{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding:8px 24px 16px}
+  .nav.open{display:flex}
+  .nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
+}
+
+/* Hero */
+.hero{position:relative;padding:0;background:var(--navy);color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,35,72,.96) 0%,rgba(10,35,72,.85) 38%,rgba(10,35,72,.15) 75%)}
+.hero .wrap{position:relative;z-index:1;min-height:clamp(420px,52vw,560px);display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(2.1rem,4.4vw,3.4rem);font-weight:800;max-width:15ch}
+.hero p{max-width:46ch;margin:18px 0 30px;color:#D5E1F0;font-size:1.08rem}
+.btn{display:inline-block;white-space:nowrap;text-align:center;padding:13px 24px;border-radius:6px;font-weight:700;text-decoration:none;font-size:.97rem}
+.btn-light{background:#fff;color:var(--navy)}
+.btn-light:hover{background:#E6F1F7}
+.btn-outline{border:1.5px solid var(--blue);color:var(--blue)}
+.btn-outline:hover{background:var(--blue);color:#fff}
+@media (max-width:700px){.hero::after{background:rgba(10,35,72,.82)}}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
+.about-grid p{margin:16px 0 0;max-width:62ch}
+.vision{border-left:4px solid var(--teal);padding:6px 0 6px 28px}
+.vision h3{font-size:1rem;color:var(--teal);font-weight:700;margin-bottom:10px}
+.vision p{font-size:1.45rem;line-height:1.4;font-weight:600;color:var(--navy);margin:0}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px}}
+
+/* Leadership */
+.leaders{display:grid;grid-template-columns:repeat(3,minmax(0,300px));gap:40px;margin-top:36px}
+.leader .photo{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:8px;background:var(--soft)}
+.leader .initials{display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;font-size:3.2rem;font-weight:700;letter-spacing:.04em}
+.leader h3{font-size:1.05rem;margin-top:14px;color:var(--navy)}
+.leader p{margin:2px 0 0;color:var(--muted);font-size:.93rem}
+.leader p.bio{margin-top:12px;color:var(--ink);font-size:.92rem;line-height:1.55}
+@media (max-width:900px){.leaders{grid-template-columns:repeat(2,minmax(0,300px))}}
+@media (max-width:560px){.leaders{grid-template-columns:minmax(0,340px);gap:36px}}
+
+/* Companies */
+.companies{background:var(--soft)}
+.co-list{display:grid;gap:28px;margin-top:44px}
+.co{display:grid;grid-template-columns:300px 1fr auto;gap:36px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px}
+.co img{border-radius:6px;width:100%;aspect-ratio:296/239;object-fit:cover}
+.co .meta{color:var(--muted);font-size:.92rem;font-weight:600}
+.co h3{font-size:1.45rem;color:var(--navy);margin:4px 0 6px}
+.co .field{font-weight:700}
+.co .field.lab{color:var(--blue)}
+.co .field.red{color:#C8282E}
+.co .field.green{color:#2E7D32}
+.co p{margin:10px 0 0;color:var(--muted);max-width:64ch}
+.details{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:6px;font-size:.93rem}
+.details li{display:flex;gap:10px;align-items:flex-start}
+.details svg{flex:none;width:17px;height:17px;margin-top:3px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.details a{font-weight:600;text-decoration:none}
+.details a:hover{text-decoration:underline}
+.details span{color:var(--ink)}
+@media (max-width:900px){.co{grid-template-columns:1fr;gap:18px}.co img{max-width:420px}}
+
+/* Focus streams */
+.streams{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:1px solid var(--line)}
+.stream{padding:28px 24px 8px 0;border-right:1px solid var(--line);margin-right:24px}
+.stream:last-child{border-right:0;margin-right:0}
+.stream svg{width:34px;height:34px;stroke:var(--teal);fill:none;stroke-width:1.6}
+.stream h3{font-size:1.1rem;color:var(--navy);margin:14px 0 6px}
+.stream p{margin:0;color:var(--muted);font-size:.95rem}
+@media (max-width:900px){.streams{grid-template-columns:repeat(2,1fr)}.stream{border-right:0;margin-right:0;border-bottom:1px solid var(--line);padding-bottom:24px}}
+@media (max-width:520px){.streams{grid-template-columns:1fr}}
+
+/* Quality */
+.quality{border-top:1px solid var(--line)}
+.certs{display:grid;grid-template-columns:repeat(5,1fr);gap:40px 28px;margin-top:48px}
+.cert{text-align:center}
+.cert .logo{height:92px;display:grid;place-items:center}
+.cert img{max-height:92px;width:auto;object-fit:contain}
+.certgroup{margin-top:44px;padding-top:28px;border-top:1px solid var(--line)}
+.certgroup:first-of-type{border-top:0;padding-top:0}
+.certgroup h3{font-size:1.25rem;color:var(--navy)}
+.certgroup .scope{color:var(--muted);max-width:72ch;margin:8px 0 0}
+.certgroup .certs{margin-top:24px}
+.cert p{margin:12px 0 0;font-size:.88rem;color:var(--muted);line-height:1.4}
+@media (max-width:900px){.certs{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.certs{grid-template-columns:repeat(2,1fr)}}
+
+/* Contact */
+.contact{background:var(--navy);color:#fff}
+.contact h2{color:#fff}
+.contact .lede{color:#C4D3E6}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:36px}
+.contact-grid h3{font-size:.95rem;color:#8FC7DD;font-weight:700;margin-bottom:6px}
+.contact-grid p{margin:0;color:#fff}
+.contact .ph{outline-color:#E0BE4A}
+@media (max-width:760px){.contact-grid{grid-template-columns:1fr}}
+
+/* Footer */
+footer{background:#071A36;color:#A9B8CC;font-size:.9rem;padding:28px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer ul{display:flex;flex-wrap:wrap;gap:22px;list-style:none;margin:0;padding:0}
+footer a{color:#D3DEEB;text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+.nav{gap:24px}
+.nav a{font-size:.92rem}
+.nav a[aria-current="page"]{border-bottom-color:var(--teal);color:var(--navy)}
+@media (max-width:1080px){
+  .menu-btn{display:block;margin-left:auto}
+  .nav{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding:8px 24px 16px}
+  .nav.open{display:flex}
+  .nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
+}
+.page-head{background:var(--navy);color:#fff;padding:56px 0 52px}
+.page-head .crumb{font-size:.88rem;color:#A9C3DD;margin-bottom:10px}
+.page-head .crumb a{color:#CFE0F0;text-decoration:underline;text-underline-offset:3px}
+.page-head h1{font-size:clamp(2rem,4vw,2.8rem);font-weight:800}
+.page-head p{color:#C9D8EA;max-width:62ch;margin:12px 0 0;font-size:1.05rem}
+.inner section{padding:64px 0 88px}
+.explore{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.explore a{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 24px;transition:border-color .15s,box-shadow .15s}
+.explore a:hover{border-color:var(--teal);box-shadow:0 6px 20px rgba(10,35,72,.08)}
+.explore h3{font-size:1.15rem;color:var(--navy);margin-bottom:8px}
+.explore p{margin:0;color:var(--muted);font-size:.95rem}
+.explore .go{display:inline-block;margin-top:14px;font-weight:700;color:var(--blue);font-size:.93rem}
+@media (max-width:900px){.explore{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.explore{grid-template-columns:1fr}}
+.contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.contact-cards div{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:24px}
+.contact-cards h3{font-size:.95rem;color:#1C6482;margin-bottom:8px}
+.contact-cards p{margin:0;font-size:1.02rem}
+.contact-cards a{text-decoration:none;font-weight:600}
+@media (max-width:760px){.contact-cards{grid-template-columns:1fr}}
+.contact-note{margin-top:40px;color:var(--muted)}
+
+.vision h3{color:#1C6482}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+body{min-height:100vh;display:flex;flex-direction:column}
+body>main{flex:1 0 auto}
+
+.subs{background:var(--soft)}
+.subs h2{color:var(--navy)}
+.sub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px}
+.sub{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px}
+.sub h3{font-size:1.1rem;color:var(--navy)}
+.sub .ctry{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+.sub dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:18px 0 0;font-size:.95rem}
+.sub dt{color:var(--muted);font-weight:600}
+.sub dd{margin:0}
+.sub dd a{font-weight:600;text-decoration:none}
+.sub dd a:hover{text-decoration:underline}
+@media (max-width:760px){.sub-grid{grid-template-columns:1fr}}
+
+@media (max-width:1180px){
+  .menu-btn{display:block;margin-left:auto}
+  .nav{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding:8px 24px 16px}
+  .nav.open{display:flex}
+  .nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}}
+.nav a{white-space:nowrap}
+
+/* shared: nav dropdown + footer */
+.nav .has-sub{position:relative}
+.nav .has-sub>a{display:inline}
+.nav .sub::before{content:"";position:absolute;left:0;right:0;top:-16px;height:16px}
+.nav .caret{width:12px;height:12px;margin-left:5px;vertical-align:0;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nav .sub{display:none;position:absolute;top:100%;left:-18px;z-index:60;list-style:none;margin:0;padding:8px 0;min-width:230px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 40px -12px rgba(10,35,72,.25)}
+.nav .has-sub:hover .sub,.nav .has-sub:focus-within .sub{display:block}
+.nav .sub a{display:block;padding:9px 18px;border-bottom:0;font-weight:600;white-space:nowrap}
+.nav .sub a:hover,.nav .sub a[aria-current="page"]{background:var(--soft);color:var(--navy)}
+.nav .has-sub.is-current>a{border-bottom-color:var(--teal);color:var(--navy)}
+@media (max-width:1180px){
+  .nav .sub{display:block;position:static;border:0;box-shadow:none;padding:0 0 0 16px;min-width:0;border-radius:0}
+  .nav .sub a{padding:10px 0;border-bottom:1px solid var(--line);font-weight:500}
+  .nav .caret{display:none}
+}
+footer.site-footer{background:#071A36;color:#A9B8CC;font-size:.92rem;padding:64px 0 0}
+footer.site-footer .ft-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;justify-content:initial}
+.ft-logo{margin:0;font-size:1.6rem;font-weight:800;color:#fff;letter-spacing:.01em}
+.ft-logo span{color:#4FB3D9}
+.ft-brand p{margin:12px 0 0;max-width:36ch;line-height:1.6}
+.ft-brand .ft-logo{margin:0}
+.ft-mail{display:inline-block;margin-top:16px;color:#fff!important;font-weight:700}
+.ft-col h2{margin:0 0 14px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#fff;font-weight:700}
+footer.site-footer .ft-col ul{display:grid;gap:10px;list-style:none;margin:0;padding:0}
+footer.site-footer .ft-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-top:48px;padding:22px 24px;border-top:1px solid rgba(255,255,255,.1)}
+footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style:none;margin:0;padding:0}
+@media (max-width:860px){footer.site-footer .ft-grid{grid-template-columns:1fr 1fr}.ft-brand{grid-column:1/-1}}
+@media (max-width:480px){footer.site-footer .ft-grid{grid-template-columns:1fr}}
+
+.hs{background:linear-gradient(180deg,#F6F8FB,#fff);padding:80px 0 96px}
+.hs-head{text-align:center}
+.hs-head h2{font-size:clamp(1.5rem,2.6vw,2rem);color:var(--navy)}
+.hs-head .rule{display:block;width:56px;height:3px;background:#4FB3D9;margin:14px auto 0;border-radius:2px}
+.hs-head p{margin:12px 0 0;color:var(--muted);font-weight:700;letter-spacing:.02em}
+.hs-tree{margin-top:44px;display:flex;flex-direction:column;align-items:center}
+.hs-parent{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;text-decoration:none;color:#fff;background:linear-gradient(135deg,#0A2348,#16386B);border-radius:18px;padding:26px 40px;min-width:min(440px,100%);box-shadow:0 20px 44px -24px rgba(10,35,72,.6)}
+.hs-parent strong{font-size:1.6rem;letter-spacing:.01em}
+.hs-parent .hs-badge{background:rgba(79,179,217,.2);color:#BFE6F5}
+.hs-parent .hs-meta{color:#C9D8EA;font-weight:600}
+.hs-parent .hs-desc{color:#9FD3EA;font-size:.95rem}
+.hs-parent::after{content:"";position:absolute;left:50%;top:100%;width:2px;height:40px;background:#C3D0E0}
+.hs-kids{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:32px;width:100%;margin-top:40px;padding-top:40px}
+.hs-kids::before{content:"";position:absolute;top:0;left:25%;right:25%;height:2px;background:#C3D0E0}
+.hs-kid{position:relative;display:flex;flex-direction:column;align-items:center;--c:#1F5FBF}
+.hs-kid.meteo{--c:#2E7D32}.hs-kid.munro{--c:#C8282E}
+.hs-kid::before{content:"";position:absolute;left:50%;top:-40px;width:2px;height:40px;background:#C3D0E0}
+.hs-own{position:relative;margin:-12px 0 14px;background:#fff;border:1.5px solid var(--c);color:var(--c);font-weight:800;font-size:.8rem;padding:4px 12px;border-radius:999px;letter-spacing:.02em}
+.hs-card{width:100%;height:100%;background:#fff;border:1px solid var(--line);border-top:4px solid var(--c);border-radius:16px;padding:24px 26px;box-shadow:0 16px 36px -26px rgba(10,35,72,.5)}
+.hs-badge{display:inline-block;font-size:.76rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--c);background:color-mix(in srgb,var(--c) 10%,#fff);padding:4px 10px;border-radius:6px}
+.hs-chip{display:inline-block;margin-inline-start:8px;font-size:.76rem;font-weight:800;color:#5B2A86;background:#F2ECF8;padding:4px 10px;border-radius:6px}
+.hs-card h3{margin-top:12px;font-size:1.3rem}
+.hs-card h3 a{color:var(--navy);text-decoration:none}
+.hs-card h3 a:hover{text-decoration:underline}
+.hs-card .hs-meta{margin:4px 0 0;color:var(--muted);font-weight:600;font-size:.93rem}
+.hs-sc{margin:16px 0 8px;font-weight:800;font-size:.85rem;color:var(--ink)}
+.hs-card ul{margin:0;padding-inline-start:20px;display:grid;gap:5px;color:var(--ink)}
+.hs-mk{margin:16px 0 0;padding:10px 14px;border-radius:10px;background:color-mix(in srgb,var(--c) 8%,#fff);font-size:.93rem;color:var(--ink)}
+.hs-divs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hs-divs>div{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#FCFDFE}
+.hs-divs span{font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
+.hs-divs h4{margin:4px 0 8px;font-size:1rem;color:var(--navy)}
+.hs-divs ul{font-size:.92rem}
+.hs-gov{margin:36px auto 0;max-width:80ch;text-align:center;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 20px}
+@media (max-width:900px){.hs-kids{grid-template-columns:1fr;gap:44px}.hs-kids::before{display:none}.hs-kid::before{top:-44px;height:44px}.hs-kid.munro::before{display:none}}
+@media (max-width:560px){.hs-divs{grid-template-columns:1fr}.hs-parent{padding:22px 20px}}
+
+/* language flags */
+.nav .lang{display:flex;align-items:center;gap:8px}
+.nav .flag{display:inline-flex;padding:3px;border-radius:5px;border-bottom:0!important;line-height:0}
+.nav .flag svg{width:26px;height:17px;border-radius:2px;box-shadow:0 0 0 1px rgba(10,35,72,.18)}
+.nav .flag.on{background:var(--soft);box-shadow:0 0 0 2px var(--teal)}
+.nav .flag:hover svg{transform:translateY(-1px)}
+@media (max-width:1180px){.nav .lang{padding:12px 0;gap:14px}.nav .lang .flag{border-bottom:0;padding:3px}}
+
+.gal{padding:0 0 72px}
+.gal-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:200px 200px;gap:16px}
+.gal-grid figure{position:relative;margin:0;border-radius:16px;overflow:hidden;background:#E9EEF5}
+.gal-grid figure:first-child{grid-row:span 2}
+.gal-grid figure:nth-child(4){grid-column:span 2}
+.gal-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.gal-grid figure:hover img{transform:scale(1.04)}
+.gal-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;color:#fff;font-weight:700;font-size:.92rem;background:linear-gradient(transparent,rgba(7,26,54,.75))}
+@media (max-width:760px){.gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gal-grid figure{height:180px}.gal-grid figure:first-child{grid-row:auto;grid-column:span 2}.gal-grid figure:nth-child(4){grid-column:auto}}
+@media (prefers-reduced-motion:reduce){.gal-grid img{transition:none}}
+
+/* mobile polish */
+@media (max-width:1180px){
+  .site-header nav{display:contents}
+  .site-header .wrap{gap:12px}
+  .nav{max-height:calc(100vh - 76px);overflow-y:auto;box-shadow:0 18px 30px -18px rgba(10,35,72,.35)}
+  .nav .lang .flag{padding:8px}
+}
+@media (max-width:700px){
+  .wrap{padding-left:20px;padding-right:20px}
+  main section:not(.hero){padding-top:56px;padding-bottom:56px}
+  .page-head{padding:40px 0 34px}
+  .standards{padding:40px 0 32px!important}
+  .marquee li{width:150px}.marquee img{height:60px}
+  .band,.cta{padding:56px 0!important}
+  .stats-sec{padding:48px 0 24px!important}
+  .stats{grid-template-columns:1fr 1fr!important;gap:28px 16px!important}
+  .stat h3{font-size:1.1rem}.stat p{font-size:.88rem}
+  .waves{height:48px}
+  .hcos{grid-template-columns:1fr 1fr!important;gap:12px!important;margin-top:28px!important}
+  .hco{border-radius:14px}
+  .hco img{aspect-ratio:4/3!important;object-position:top}
+  .hco-body{padding:12px 10px 16px!important;gap:6px!important}
+  .hco .founded{font-size:.86rem}.hco .fld{font-size:.84rem}
+  .hco-btn{font-size:.78rem!important;padding:8px 10px!important}
+  .cta-grid{gap:32px!important}
+  footer.site-footer{padding-top:44px}
+  footer.site-footer .ft-grid{grid-template-columns:1fr 1fr!important;gap:28px 20px!important}
+  .ft-brand{grid-column:1/-1}
+  footer.site-footer .ft-col ul{gap:0!important}
+  footer.site-footer .ft-col a,footer.site-footer .ft-bottom ul a{display:inline-block;padding:9px 0}
+  footer.site-footer .ft-bottom{margin-top:28px;padding:16px 20px}
+  footer.site-footer .ft-bottom ul{gap:4px 20px}
+  .t-img{height:150px}
+  .loc-map iframe{height:240px!important;min-height:0!important}
+  .loc-photo{min-height:200px!important}
+  .tl-phase span{flex-direction:column;gap:0;border-radius:14px;text-align:center}
+  .gal-grid figure:nth-child(4){grid-column:span 2!important}
+  .hs{padding:56px 0!important}.hs-card{padding:20px!important}
+  .cp{padding:44px 0 60px!important}.cp h2{margin-top:44px!important}
+  .cp-img{max-height:230px;object-fit:cover}
+  .ct{padding:40px 0 64px!important}
+}
+@media (max-width:360px){
+  footer.site-footer .ft-grid{grid-template-columns:1fr!important}
+  .hcos,.stats{grid-template-columns:1fr!important}
+}
+/* contrast */
+.cap .deg{color:#1E6F91!important}
+.cap .sub{color:#56627A!important;opacity:1!important}
+.loc .tag,.tl-year{color:#1E6F91!important}
+.hs-kid.meteo{--c:#276A2B}
+
+.cl-hero{background:linear-gradient(180deg,#F6F8FB,#fff);padding:64px 0 24px}
+.cl-hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
+.cl-hero h2{font-size:clamp(1.5rem,2.6vw,2rem);color:var(--navy)}
+.cl-hero .rule{display:block;width:56px;height:3px;background:#4FB3D9;margin:14px 0 0;border-radius:2px}
+.cl-hero p{margin:16px 0 0;color:var(--ink);font-size:1.05rem}
+.cl-hero .cl-count{color:var(--muted)}.cl-count b{color:var(--navy);font-size:1.3rem}
+.cl-hero img{width:100%;height:auto;border-radius:18px;box-shadow:0 22px 48px -26px rgba(10,35,72,.5)}
+.cl{padding:32px 0 96px}
+.cl-tools{display:grid;gap:16px;margin-bottom:28px}
+.cl-search{width:100%;max-width:460px;font:inherit;font-size:1rem;padding:12px 16px;border:1.5px solid #C5CFDC;border-radius:12px}
+.cl-search:focus{outline:3px solid rgba(42,141,180,.35);border-color:var(--teal)}
+.cl-chips{display:flex;flex-wrap:wrap;gap:8px}
+.cl-chip{font:inherit;font-size:.88rem;font-weight:700;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.cl-chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.cl-chip:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.cl-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cl-card a{display:flex;flex-direction:column;gap:6px;height:100%;padding:18px;border:1px solid var(--line);border-top:4px solid var(--cc);border-radius:14px;background:#fff;text-decoration:none;color:var(--ink);transition:box-shadow .2s,transform .2s}
+.cl-card a:hover{box-shadow:0 14px 30px -18px rgba(10,35,72,.45);transform:translateY(-2px)}
+.cl-ic svg{width:28px;height:28px;fill:none;stroke:var(--cc);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.cl-t{font-weight:800;color:var(--navy);line-height:1.35}
+.cl-k{font-size:.8rem;color:var(--muted)}
+.cl-l{margin-top:auto;padding-top:8px;font-size:.86rem;font-weight:700;color:var(--blue)}
+.cl-empty{margin-top:24px;color:var(--muted)}
+@media (max-width:1000px){.cl-grid{grid-template-columns:repeat(3,1fr)}.cl-hero-grid{grid-template-columns:1fr}}
+@media (max-width:700px){.cl-grid{grid-template-columns:1fr 1fr;gap:12px}.cl-card a{padding:14px}.cl-hero{padding:40px 0 8px}}
+@media (prefers-reduced-motion:reduce){.cl-card a{transition:none}}
+html[dir="rtl"] .cl-hero .rule{margin:14px 0 0 auto}
+
+/* footer socials */
+.ft-soc{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
+.ft-soc li{display:flex;align-items:center;gap:8px}
+.ft-soc span{font-size:.85rem;color:#A9B8CC;min-width:76px}
+.ft-soc a{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08)}
+.ft-soc a:hover{background:#2A8DB4}
+.ft-soc svg{width:18px;height:18px;fill:#fff}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="MRC Group home"><img src="images/assets/284c317e3450.webp" alt="MRC Group" width="264" height="30"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav aria-label="Main">
+      <ul class="nav" id="nav">
+        <li class="has-sub is-current"><a href="about.html" aria-haspopup="true">About<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></a><ul class="sub"><li><a href="about.html">Group Overview</a></li><li><a href="growth.html">Our Growth</a></li><li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="munro-instruments.html">Munro Instruments Limited</a></li><li><a href="team.html">Meet Our Team</a></li><li><a href="catalogs.html" aria-current="page">Catalog Library</a></li></ul></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="streams.html">Solutions</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="lang"><a class="flag on" href="catalogs.html" lang="en" hreflang="en" aria-label="English" aria-current="true"><svg viewBox="0 0 60 30" aria-hidden="true"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#C8102E" stroke-width="2.4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a><a class="flag" href="he-catalogs.html" lang="he" hreflang="he" aria-label="עברית"><svg viewBox="0 0 44 32" aria-hidden="true"><path fill="#fff" d="M0 0h44v32H0z"/><path fill="#0038B8" d="M0 3h44v4.5H0zM0 24.5h44V29H0z"/><path fill="none" stroke="#0038B8" stroke-width="1.6" d="M22 9.6l5.6 9.7H16.4zM22 22.4l-5.6-9.7h11.2z"/></svg></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="inner">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Catalog Library</h1>
+      <p>Product catalogs, brochures and technical datasheets.</p>
+    </div>
+  </div>
+  <section class="cl-hero">
+    <div class="wrap cl-hero-grid">
+      <div><h2>Comprehensive Product &amp; Equipment Catalogs</h2><span class="rule" aria-hidden="true"></span><p>Download dedicated brochures, technical datasheets and full category catalogs across our portfolio of 3,000+ laboratory and testing instruments.</p><p class="cl-count"><b>49</b> catalogs available</p></div>
+      <img src="images/catalogs/catalog-library.jpg" alt="" width="1400" height="782" loading="lazy" decoding="async">
+    </div>
+  </section>
+  <section class="cl">
+    <div class="wrap">
+      <div class="cl-tools">
+        <label class="sr-only" for="cl-q">Search catalogs</label>
+        <input id="cl-q" class="cl-search" type="search" placeholder="Search catalogs…" autocomplete="off">
+        <div class="cl-chips" role="group" aria-label="Filter by category"><button type="button" class="cl-chip" data-cat="all" aria-pressed="true">All</button><button type="button" class="cl-chip" data-cat="brand" aria-pressed="false">Company &amp; Brand Catalogs</button><button type="button" class="cl-chip" data-cat="general" aria-pressed="false">General Laboratory Equipment</button><button type="button" class="cl-chip" data-cat="thermal" aria-pressed="false">Temperature &amp; Environmental Control</button><button type="button" class="cl-chip" data-cat="safety" aria-pressed="false">Safety &amp; Containment</button><button type="button" class="cl-chip" data-cat="analytical" aria-pressed="false">Analytical &amp; Measuring Instruments</button><button type="button" class="cl-chip" data-cat="materials" aria-pressed="false">Materials Testing &amp; Microscopy</button></div>
+      </div>
+      <ul class="cl-grid"><li class="cl-card" data-cat="brand" style="--cc:#0A2348"><a href="https://drive.google.com/file/d/1iS4k093fpXJy0XKglVdbItaK8zfVUy2O/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">MRC Laboratory Equipment Catalog</span><span class="cl-k">Company &amp; Brand Catalogs</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="brand" style="--cc:#0A2348"><a href="https://drive.google.com/file/d/1x-ALjYwsnB9H1WPS0ni9zapiXr1bylYN/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">MRC Short Catalog</span><span class="cl-k">Company &amp; Brand Catalogs</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="brand" style="--cc:#0A2348"><a href="https://drive.google.com/file/d/1lYwFs9JO6L_hIIfH4V-bESDlgxoIor0K/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Munro Catalog</span><span class="cl-k">Company &amp; Brand Catalogs</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="brand" style="--cc:#0A2348"><a href="https://drive.google.com/file/d/1osj8r8Lro_Wr9P0TtM2Y6i241xPhlS89/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">KRÜSS Catalog</span><span class="cl-k">Company &amp; Brand Catalogs</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="brand" style="--cc:#0A2348"><a href="https://www.mrclab.co.il/Media/Doc/BEST%20PRODUCTS2016GREEN.PDF" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Best of MRC</span><span class="cl-k">Company &amp; Brand Catalogs</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/AUTOCLAVES_SPEC2020%282%29.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Autoclaves</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/BATHS_SPEC_CATALOG2020%281%29.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Laboratory Baths</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/DRY-BATHS-CATALOG2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Dry Baths</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/Ultrasonic-Cleaners_SPEC2020%281%29.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Ultrasonic Cleaners</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.com/Media/doc/WARRING_CATALOG2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Laboratory Blenders</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/BURNERS_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Burners</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://drive.google.com/file/d/1O3-yoVbHIXg_pzCdVuZhQiliPOKkh0nb/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Clinical &amp; Mini Centrifuges</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/doc/Centrifuges_catalog2017.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Laboratory Centrifuges</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Doc/VORTEX_CATALOG2017.PDF" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Vortex Mixers</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/OVER-HEAD-CATALOG_2025.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Overhead Stirrers</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/HOMOGENIZERS_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Homogenizers</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://drive.google.com/file/d/1X4GHeC2EgqSpNrtMjNJPPUcHPqlc5IvR/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Laboratory Mills</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/PIPETORS_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Pipettors</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/Peristultic-Pumps_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Peristaltic Pumps</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Doc/VACUUM-PUMPS.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Vacuum Pumps</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/doc/FILTRATION-CATALOG2017-2018.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Filtration</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/DistilationWaterPurification_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Distillation &amp; Water Purification</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://drive.google.com/file/d/1lw3WdCoR_nb_keO_PuxEYY1yhMyXZIdx/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Desiccators &amp; Dry Cabinets</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="general" style="--cc:#1F5FBF"><a href="https://www.mrclab.co.il/Media/Uploads/Washers_SPEC2021.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Laboratory Washers</span><span class="cl-k">General Laboratory Equipment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="thermal" style="--cc:#C8612A"><a href="https://www.mrclab.co.il/Media/Uploads/ENVIRONMENTAL-CHAMBERS_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Environmental Chambers</span><span class="cl-k">Temperature &amp; Environmental Control</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="thermal" style="--cc:#C8612A"><a href="https://www.mrclab.co.il/Media/Uploads/INCUBATORS_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Incubators</span><span class="cl-k">Temperature &amp; Environmental Control</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="thermal" style="--cc:#C8612A"><a href="https://www.mrclab.co.il/Media/Doc/OVENS_CATALOG2017.PDF" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Ovens</span><span class="cl-k">Temperature &amp; Environmental Control</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="thermal" style="--cc:#C8612A"><a href="https://www.mrclab.co.il/Media/Doc/FREEZERS-REFRIGERATORS_SPEC2017.PDF" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Freezers &amp; Refrigerators</span><span class="cl-k">Temperature &amp; Environmental Control</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="thermal" style="--cc:#C8612A"><a href="https://www.mrclab.co.il/Media/Uploads/THERMAL-CYCLER_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Thermal Cyclers (PCR)</span><span class="cl-k">Temperature &amp; Environmental Control</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="thermal" style="--cc:#C8612A"><a href="https://www.mrclab.co.il/Media/Uploads/REACTORS_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Reactors</span><span class="cl-k">Temperature &amp; Environmental Control</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="thermal" style="--cc:#C8612A"><a href="https://drive.google.com/file/d/1-GjW8DZRgkJN02hKofGjfmSpFsukDPvU/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Rotary Evaporators</span><span class="cl-k">Temperature &amp; Environmental Control</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="thermal" style="--cc:#C8612A"><a href="https://www.mrclab.co.il/Media/Uploads/Thermocouple-Wires_SPEC.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Thermocouple Wires</span><span class="cl-k">Temperature &amp; Environmental Control</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="thermal" style="--cc:#C8612A"><a href="https://drive.google.com/file/d/1RdKM8yMco9U25Y_hWrivfSXPdVTDdXHr/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">High-Temperature Materials</span><span class="cl-k">Temperature &amp; Environmental Control</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="safety" style="--cc:#8A3FA0"><a href="https://www.mrclab.co.il/Media/Uploads/Fume-Hood_SPEC2020%283%29.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Chemical &amp; Biological Fume Hoods</span><span class="cl-k">Safety &amp; Containment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="safety" style="--cc:#8A3FA0"><a href="https://www.mrclab.co.il/Media/Uploads/SAFETY-CABINETS_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Safety Cabinets</span><span class="cl-k">Safety &amp; Containment</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://drive.google.com/file/d/1vAwaY7ou_gyQ1jLJSvE2II-3rlef8t-y/view" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Spectrophotometers</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(Google Drive)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Uploads/Microplate_Reader_Series_SPEC.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Microplate Readers</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Uploads/ElectroPhoresis_SPEC2020%281%29.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Electrophoresis</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Uploads/FOOD-ANALYZERS_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Food Analyzers</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Uploads/MEDICAL-ANALYZERS_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Medical Analyzers</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Doc/Material-Analyzers_CATALOG2017.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Material Analyzers</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Uploads/COLOR_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Color Measurement</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Doc/METERS-DATALOGGERS-MRC.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Meters &amp; Data Loggers</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Doc/MecanicalMeasurement-SPEC.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Mechanical Measurement</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Uploads/DENTAL_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Dental Products</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="analytical" style="--cc:#1E7F86"><a href="https://www.mrclab.co.il/Media/Uploads/NIGHT-VISION_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Night Vision</span><span class="cl-k">Analytical &amp; Measuring Instruments</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="materials" style="--cc:#2E7D32"><a href="https://www.mrclab.co.il/Media/Uploads/Compresion-Tensile_SPEC2020.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Compression &amp; Tensile Testing</span><span class="cl-k">Materials Testing &amp; Microscopy</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="materials" style="--cc:#2E7D32"><a href="https://www.mrclab.co.il/Media/doc/Microscopes_CATALOG2017.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Microscopes</span><span class="cl-k">Materials Testing &amp; Microscopy</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li><li class="cl-card" data-cat="materials" style="--cc:#2E7D32"><a href="https://www.mrclab.co.il/Media/Doc/Motorized-Manual-Stage.pdf" target="_blank" rel="noopener"><span class="cl-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><span class="cl-t">Motorized &amp; Manual Stages</span><span class="cl-k">Materials Testing &amp; Microscopy</span><span class="cl-l">View Catalog <span lang="en">(PDF)</span> ›</span></a></li></ul>
+      <p class="cl-empty" hidden>No catalogs found. Try another term or <a href="contact.html">contact us</a>.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap ft-grid">
+    <div class="ft-brand">
+      <p class="ft-logo">MRC <span>GROUP</span></p>
+      <p>Scientific, laboratory and measurement solutions from Israel and the United Kingdom, serving customers worldwide since 1989.</p>
+      <a class="ft-mail" href="mailto:info@mrc-group.net">info@mrc-group.net</a>
+      <ul class="ft-soc"><li><span>MRC Ltd</span><a href="https://www.facebook.com/mrclab" target="_blank" rel="noopener" aria-label="MRC Ltd on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2V2.2h-2.8C10.9 2.2 10 4.4 10 6.4v2.1H7.5V12H10v9.8h4V12h2.8l.4-3.5z"/></svg></a><a href="https://www.youtube.com/user/mrclabequipment" target="_blank" rel="noopener" aria-label="MRC Ltd on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 7.6a3 3 0 0 0-2.1-2.1C18 5 12 5 12 5s-6 0-7.9.5A3 3 0 0 0 2 7.6 31 31 0 0 0 1.5 12a31 31 0 0 0 .5 4.4 3 3 0 0 0 2.1 2.1C6 19 12 19 12 19s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.4 31 31 0 0 0-.5-4.4zM10 15.2V8.8l5.2 3.2z"/></svg></a></li></ul>
+    </div>
+    <nav class="ft-col" aria-label="About"><h2>About</h2><ul>
+      <li><a href="about.html">Group Overview</a></li><li><a href="growth.html">Our Growth</a></li><li><a href="team.html">Meet Our Team</a></li><li><a href="quality.html">Quality &amp; Accreditations</a></li><li><a href="catalogs.html">Catalog Library</a></li></ul></nav>
+    <nav class="ft-col" aria-label="Our companies"><h2>Our Companies</h2><ul>
+      <li><a href="mrc.html">MRC Ltd</a></li><li><a href="meteo-tech.html">Meteo-Tech Ltd</a></li><li><a href="munro-instruments.html">Munro Instruments Limited</a></li></ul></nav>
+    <nav class="ft-col" aria-label="Explore"><h2>Explore</h2><ul>
+      <li><a href="equipment.html">Equipment</a></li><li><a href="services.html">Services</a></li><li><a href="streams.html">Solutions</a></li><li><a href="locations.html">Locations</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
+  </div>
+  <div class="wrap ft-bottom">
+    <ul>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="cookies.html">Cookie Notice</a></li>
+      <li><a href="cookies.html#settings">Cookie Settings</a></li>
+    </ul>
+    <span>Copyright © 2026 MRC Group</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.menu-btn'), n=document.getElementById('nav');
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+})();
+</script>
+<script src="catalog-filter.js" defer></script>
+</body>
+</html>
