@@ -439,6 +439,12 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
 .ft-soc a{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08)}
 .ft-soc a:hover{background:#2A8DB4}
 .ft-soc svg{width:18px;height:18px;fill:#fff}
+
+/* 5-column senior row */
+.org .cols{grid-template-columns:repeat(5,minmax(0,1fr))}
+.org .col.mrc{grid-column:span 1}
+.org .cols::before{left:calc((100% - 80px)/10);right:calc((100% - 80px)/10)}
+@media (max-width:1000px){.org .col.mrc .execs{grid-template-columns:minmax(0,240px)!important;justify-content:center}}
 </style>
 </head>
 <body>
@@ -484,11 +490,11 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
             <div class="co-bar">Meteo-Tech Ltd</div>
           </li>
           <li class="col mrc">
-            <ul class="execs"><li class="exec"><figure><img decoding="async" loading="lazy" src="images/assets/eca7f5c43a84.webp" alt="Eran Ovadya" width="448" height="560"><details class="bio"><summary aria-label="Read more about Eran Ovadya"><span>Read More</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg></summary><div class="bio-text"><p>Eran brings nearly two decades of experience in corporate finance, accounting, M&amp;A transactions, IPOs and reverse takeovers, with particular expertise in publicly traded life-science companies. Earlier in his career he spent more than a decade in finance roles at companies including Gamida Cell, Omrix Biopharmaceuticals (a Johnson &amp; Johnson company) and Macrocure, taking part in NASDAQ IPO processes. He holds an MBA specializing in finance and a BA in Accounting and Economics from the Open University of Israel.</p></div></details></figure><div class="cap"><strong>Eran Ovadya, <span class="deg" lang="en" dir="ltr">M.B.A</span></strong><span>Chief Financial Officer</span></div></li><li class="exec" data-node="cto"><figure><img decoding="async" loading="lazy" src="images/assets/8892145df0a6.webp" alt="Simon Jini" width="280" height="280"><details class="bio"><summary aria-label="Read more about Simon Jini"><span>Read More</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg></summary><div class="bio-text"><p>Simon brings more than ten years of experience in the scientific field, with extensive knowledge of analytical equipment and hands-on experience in industry. He leads automation across the group and holds an M.Sc. in Biochemistry from the Weizmann Institute of Science.</p></div></details></figure><div class="cap"><strong>Simon Jini, <span class="deg" lang="en" dir="ltr">M.Sc.</span></strong><span>Chief Technology Officer</span></div></li></ul>
+            <ul class="execs"><li class="exec" data-node="cto"><figure><img decoding="async" loading="lazy" src="images/assets/8892145df0a6.webp" alt="Simon Jini" width="280" height="280"><details class="bio"><summary aria-label="Read more about Simon Jini"><span>Read More</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg></summary><div class="bio-text"><p>Simon brings more than ten years of experience in the scientific field, with extensive knowledge of analytical equipment and hands-on experience in industry. He leads automation across the group and holds an M.Sc. in Biochemistry from the Weizmann Institute of Science.</p></div></details></figure><div class="cap"><strong>Simon Jini, <span class="deg" lang="en" dir="ltr">M.Sc.</span></strong><span>Chief Technology Officer</span></div></li></ul>
             <div class="co-bar">MRC Ltd</div>
           </li>
           <li class="col munro">
-            <ul class="execs"><li class="exec"><figure><span class="ini ph" role="img" aria-label="John Adams"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.5 21c.8-4.6 4.2-7.2 8.5-7.2s7.7 2.6 8.5 7.2z"/></svg></span></figure><div class="cap"><strong>John Adams, <span class="deg" lang="en" dir="ltr">BEng</span></strong><span>Vice President</span></div></li><li class="exec"><figure><img decoding="async" loading="lazy" src="images/assets/cccedc86d7fc.webp" alt="Ben Powers" width="448" height="560"></figure><div class="cap"><strong>Ben Powers, <span class="deg" lang="en" dir="ltr">BEng</span></strong><span>Quality Manager</span></div></li></ul>
+            <ul class="execs"><li class="exec"><figure><span class="ini ph" role="img" aria-label="John Adams"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.5 21c.8-4.6 4.2-7.2 8.5-7.2s7.7 2.6 8.5 7.2z"/></svg></span></figure><div class="cap"><strong>John Adams, <span class="deg" lang="en" dir="ltr">BEng</span></strong><span>Vice President</span></div></li><li class="exec"><figure><span class="ini ph" role="img" aria-label="Tawanda Singizi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.5 21c.8-4.6 4.2-7.2 8.5-7.2s7.7 2.6 8.5 7.2z"/></svg></span></figure><div class="cap"><strong>Tawanda Singizi, <span class="deg" lang="en" dir="ltr">Grad. Dip. Eng.</span></strong><span>Quality Manager</span></div></li></ul>
             <div class="co-bar">Munro Instruments Limited</div>
           </li>
         </ul>
