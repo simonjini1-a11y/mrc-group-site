@@ -61,7 +61,7 @@ Intro (image, founded, field, description, website), Services list, Quality & Ac
 - Senior row, 5 columns, above company bars:
   - Meteo-Tech: Denis Kochuk, B.Sc., VP Engineering (images/team/denis-kochuk.webp); Alona Aryeh, VP Meteorology (placeholder; photo and degree OPEN).
   - MRC: Simon Jini, M.Sc., CTO.
-  - Munro: John Adams, BEng, Vice President (john-adams.webp); Tawanda Singizi, Grad., Quality Manager (tawanda-singizi.webp).
+  - Munro: John Adams, BEng, Vice President (john-adams-2025.webp); Tawanda Singizi, Grad., Quality Manager (tawanda-singizi.webp).
 - Removed: Eran (removed for now at his request) and Ben Powers (left the company; his photo was removed from the site).
 - Employee section (below management): roles only, no names, grouped by company (7-column grid): MRC Ltd 21, Munro Instruments Limited 13, Meteo-Tech Ltd 7 (source: MRC_Team_Structure-v2.xlsx from Eran; Reuven to verify). Total headcount 48.
 
