@@ -58,7 +58,7 @@ section{padding:88px 0}
 /* Header */
 .site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
-.brand img{height:30px;width:auto}
+.brand img{height:48px;width:auto}
 .site-header nav{margin-left:auto}
 .nav{display:flex;gap:30px;list-style:none;margin:0;padding:0}
 .nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;padding:6px 0;border-bottom:2px solid transparent}
@@ -431,6 +431,11 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
 .org .emp span{color:#56627A;font-size:.82rem;line-height:1.35}
 @media (max-width:1100px){.org .emp-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (max-width:620px){.org .emp-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.org .emp-sec{margin-top:36px}}
+.org .emp-co+.emp-co{margin-top:36px}
+.org .emp-co h3{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 12px;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid #DCE5F0;color:var(--navy);font-size:1.1rem}
+.org .emp-co .emp-n{color:#56627A;font-size:.85rem;font-weight:500}
+.org .emp-co .emp{min-height:72px}
+.org .emp-co .emp span{color:var(--navy);font-size:.88rem;font-weight:600}
 
 /* footer socials */
 .ft-soc{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
@@ -452,7 +457,7 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="./" aria-label="MRC Group home"><img src="images/assets/284c317e3450.webp" alt="MRC Group" width="264" height="30"></a>
+    <a class="brand" href="./" aria-label="MRC Group home"><img src="images/assets/mrc-group-logo.webp" alt="MRC Group – Scientific, Laboratory &amp; Measurement Solutions" width="205" height="48"></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav aria-label="Main">
       <ul class="nav" id="nav">
@@ -494,11 +499,11 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
             <div class="co-bar">MRC Ltd</div>
           </li>
           <li class="col munro">
-            <ul class="execs"><li class="exec"><figure><img src="images/team/john-adams.webp" alt="John Adams" width="448" height="560" loading="lazy" decoding="async"></figure><div class="cap"><strong>John Adams, <span class="deg" lang="en" dir="ltr">BEng</span></strong><span>Vice President</span></div></li><li class="exec"><figure><img src="images/team/tawanda-singizi.webp" alt="Tawanda Singizi" width="448" height="560" loading="lazy" decoding="async"></figure><div class="cap"><strong>Tawanda Singizi, <span class="deg" lang="en" dir="ltr">Grad. Dip. Eng.</span></strong><span>Quality Manager</span></div></li></ul>
+            <ul class="execs"><li class="exec"><figure><img src="images/team/john-adams.webp" alt="John Adams" width="420" height="525" loading="lazy" decoding="async"></figure><div class="cap"><strong>John Adams, <span class="deg" lang="en" dir="ltr">BEng</span></strong><span>Vice President</span></div></li><li class="exec"><figure><img src="images/team/tawanda-singizi.webp" alt="Tawanda Singizi" width="448" height="560" loading="lazy" decoding="async"></figure><div class="cap"><strong>Tawanda Singizi, <span class="deg" lang="en" dir="ltr">Grad.</span></strong><span>Quality Manager</span></div></li></ul>
             <div class="co-bar">Munro Instruments Limited</div>
           </li>
         </ul>
-        <div class="emp-sec"><ul class="emp-grid"><li class="emp"><strong>Dor Ungar</strong><span>Digital Marketing Manager</span></li><li class="emp"><strong>Tali Nagara</strong><span>Orders Department Manager</span></li><li class="emp"><strong>Anat Ben David</strong><span>Collections Department Manager</span></li><li class="emp"><strong>Smadar Havani</strong><span>Treasury Department Manager</span></li><li class="emp"><strong>Udi Saar</strong><span>Laboratory Manager</span></li><li class="emp"><strong>Oriel Shakhimov</strong><span>Sales Department Manager</span></li><li class="emp"><strong>Shmulik</strong><span>Warehouse Manager</span></li></ul></div>
+        <div class="emp-sec"><div class="emp-co mrc"><h3>MRC Ltd <span class="emp-n">21 Team Members</span></h3><ul class="emp-grid"><li class="emp"><span>Head of Service</span></li><li class="emp"><span>Sales</span></li><li class="emp"><span>Sales</span></li><li class="emp"><span>Sales</span></li><li class="emp"><span>Graphics</span></li><li class="emp"><span>Digital Marketing</span></li><li class="emp"><span>Warehouse</span></li><li class="emp"><span>Warehouse</span></li><li class="emp"><span>Technician</span></li><li class="emp"><span>Technician</span></li><li class="emp"><span>Technician</span></li><li class="emp"><span>Production Manager</span></li><li class="emp"><span>Domestic Operation</span></li><li class="emp"><span>Domestic Operation</span></li><li class="emp"><span>International Operation</span></li><li class="emp"><span>Finance</span></li><li class="emp"><span>Accounting</span></li><li class="emp"><span>Accounting</span></li><li class="emp"><span>Fabricator</span></li><li class="emp"><span>Fabricator</span></li><li class="emp"><span>Fabricator</span></li></ul></div><div class="emp-co munro"><h3>Munro Instruments Limited <span class="emp-n">13 Team Members</span></h3><ul class="emp-grid"><li class="emp"><span>Technician</span></li><li class="emp"><span>Sales &amp; Office Manager</span></li><li class="emp"><span>Technician</span></li><li class="emp"><span>Office Administrator</span></li><li class="emp"><span>Accounts Administrator</span></li><li class="emp"><span>Mechanical &amp; Inspection Engineer</span></li><li class="emp"><span>Warehouse Operative</span></li><li class="emp"><span>Mechanical Engineer</span></li><li class="emp"><span>Mechanical Engineer</span></li><li class="emp"><span>Mechanical Engineer</span></li><li class="emp"><span>Mechanical Engineer</span></li><li class="emp"><span>Mechanical Engineer</span></li><li class="emp"><span>Mechanical Engineer</span></li></ul></div><div class="emp-co meteo"><h3>Meteo-Tech Ltd <span class="emp-n">7 Team Members</span></h3><ul class="emp-grid"><li class="emp"><span>Climate Manager</span></li><li class="emp"><span>Environmental Quality Manager</span></li><li class="emp"><span>Forecast Center Manager</span></li><li class="emp"><span>Software Developer</span></li><li class="emp"><span>Technical Laboratory</span></li><li class="emp"><span>Sales Manager</span></li><li class="emp"><span>Field Technician</span></li></ul></div></div>
       </div>
     </div>
   </section>

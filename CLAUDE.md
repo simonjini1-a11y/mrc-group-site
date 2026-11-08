@@ -9,6 +9,9 @@
 ## Pages (EN ↔ HE)
 index↔he, about↔he-about (Group Overview), growth↔he-growth, mrc↔he-mrc, meteo-tech↔he-meteo-tech, munro-instruments↔he-munro-instruments, team↔he-team, catalogs↔he-catalogs, equipment↔he-equipment, services↔he-services, streams↔he-solutions (Solutions), locations↔he-locations, faq↔he-faq, contact↔he-contact, quality↔he-quality, thanks↔he-thanks, accessibility↔he-accessibility. privacy/disclaimer/cookies: EN only. leadership.html→team.html and companies.html→about.html are redirects.
 
+## Logo
+- Header logo: images/assets/mrc-group-logo.webp (icon + MRC GROUP + tagline), shown at 48px height. Footer keeps the text logo (dark background).
+
 ## Nav and footer (duplicated in every page; any change must be made in all pages, EN and HE)
 - Menu: About▾ (Group Overview, Our Growth, MRC Ltd, Meteo-Tech Ltd, Munro Instruments Limited, Meet Our Team, Catalog Library) · Equipment · Services · Solutions · Locations · FAQ · Contact Us · UK/IL flags (inline SVG). Each flag links to the matching page in the other language.
 - Hamburger menu below 1180px. The dropdown has a hover bridge.
@@ -58,9 +61,9 @@ Intro (image, founded, field, description, website), Services list, Quality & Ac
 - Senior row, 5 columns, above company bars:
   - Meteo-Tech: Denis Kochuk, B.Sc., VP Engineering (images/team/denis-kochuk.webp); Alona Aryeh, VP Meteorology (placeholder; photo and degree OPEN).
   - MRC: Simon Jini, M.Sc., CTO.
-  - Munro: John Adams, BEng, Vice President (john-adams.webp); Tawanda Singizi, Grad. Dip. Eng., Quality Manager (tawanda-singizi.webp).
+  - Munro: John Adams, BEng, Vice President (john-adams.webp); Tawanda Singizi, Grad., Quality Manager (tawanda-singizi.webp).
 - Removed: Eran (removed for now at his request) and Ben Powers (left the company; his photo was removed from the site).
-- Employee grid (7 columns, name + role only, no hierarchy lines): Dor Ungar (Digital Marketing Manager), Tali Nagara (Orders), Anat Ben David (Collections), Smadar Havani (Treasury), Udi Saar (Laboratory Manager), Oriel Shakhimov (Sales), Shmulik (Warehouse). OPEN: the full list of ~42 employees across the 3 companies; English spellings and Shmulik's surname to be confirmed.
+- Employee section (below management): roles only, no names, grouped by company (7-column grid): MRC Ltd 21, Munro Instruments Limited 13, Meteo-Tech Ltd 7 (source: MRC_Team_Structure-v2.xlsx from Eran; Reuven to verify). Total headcount 48.
 
 ### Equipment / Services / Solutions
 Image-header tiles (images/equipment|services|solutions, class "has"; product shots use "prod" = contain), each with company tags.
@@ -89,7 +92,7 @@ OPEN: activate the form by sending a first inquiry and approving the FormSubmit 
 
 ## Open items
 1. Alona: photo and degree.
-2. Full employee list.
+2. Reuven to verify the role list on Meet Our Team.
 3. Social links for Munro (LinkedIn, X, YouTube) and Meteo-Tech (LinkedIn, YouTube, Facebook).
 4. Milestones for 2025/2026.
 5. Decisions for Reuven/Eran: additional languages, and final content for Equipment/Services/Solutions.
