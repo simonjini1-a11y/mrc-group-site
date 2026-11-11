@@ -5,6 +5,7 @@
 - Static HTML, no build. Each page has inline `<style>` and its own CSP `<meta>`. Inline menu script is allowed by a sha256 hash, so do not change it. Other JS lives in external files: `org-lines.js` (no longer in use), `catalog-filter.js`.
 - CSP additions: `frame-src https://www.google.com` (map pages); `form-action 'self' https://formsubmit.co` (contact pages).
 - Working style: Simon (sales8@mrclab.com) runs the site. Instructions come from Eran Ovadya (CFO), with Reuven Bookstein (CEO) in copy. Answer in Hebrew, be brief.
+- Autonomy (approved by Simon): for tasks Simon gives, Claude does the work end-to-end without asking: edit, commit on the claude/ branch, open PR, merge, verify the Pages deploy. Work lean and token-efficient (batch edits, minimal reads, no unnecessary screenshots). Rename changed image files to bust browser cache.
 
 ## Pages (EN ↔ HE)
 index↔he, about↔he-about (Group Overview), growth↔he-growth, mrc↔he-mrc, meteo-tech↔he-meteo-tech, munro-instruments↔he-munro-instruments, team↔he-team, catalogs↔he-catalogs, equipment↔he-equipment, services↔he-services, streams↔he-solutions (Solutions), locations↔he-locations, faq↔he-faq, contact↔he-contact, quality↔he-quality, thanks↔he-thanks, accessibility↔he-accessibility. privacy/disclaimer/cookies: EN only. leadership.html→team.html and companies.html→about.html are redirects.
