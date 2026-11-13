@@ -11,7 +11,7 @@
 index↔he, about↔he-about (Group Overview), growth↔he-growth, mrc↔he-mrc, meteo-tech↔he-meteo-tech, munro-instruments↔he-munro-instruments, team↔he-team, catalogs↔he-catalogs, equipment↔he-equipment, services↔he-services, streams↔he-solutions (Solutions), locations↔he-locations, faq↔he-faq, contact↔he-contact, quality↔he-quality, thanks↔he-thanks, accessibility↔he-accessibility. privacy/disclaimer/cookies: EN only. leadership.html→team.html and companies.html→about.html are redirects.
 
 ## Logo
-- Header logo: images/assets/mrc-group-logo.webp (icon + MRC GROUP + tagline), shown at 48px height. Footer keeps the text logo (dark background).
+- Header logo: images/assets/mrc-group-logo-v2.webp (icon + MRC GROUP + tagline), shown at 48px height. Footer keeps the text logo (dark background).
 
 ## Nav and footer (duplicated in every page; any change must be made in all pages, EN and HE)
 - Menu: About▾ (Group Overview, Our Growth, MRC Ltd, Meteo-Tech Ltd, Munro Instruments Limited, Meet Our Team, Catalog Library) · Equipment · Services · Solutions · Locations · FAQ · Contact Us · UK/IL flags (inline SVG). Each flag links to the matching page in the other language.
@@ -35,7 +35,7 @@ index↔he, about↔he-about (Group Overview), growth↔he-growth, mrc↔he-mrc,
 4. "Driven By Precision. Proven By Scale." + 4 stats (35+ / 3,000+ / 100+ / 60+), text in black.
 5. Waves.
 6. "Our Companies Power Scientific Progress": MRC (Founded 1989), Munro Instruments (1864, button "Explore Munro Instruments"), Munro Scientific (2009), Meteo-Tech (Founded 1989).
-7. "Comprehensive Product & Equipment Catalogs" (images/catalogs/catalog-library.jpg) → catalogs.html.
+7. "Comprehensive Product & Equipment Catalogs" (images/catalogs/catalog-library.webp) → catalogs.html.
 8. CTA "Looking For The Right Instrument Or Service?" + Holon / Bnei Brak / Harlow.
 
 ### Group Overview
