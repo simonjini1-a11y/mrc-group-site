@@ -242,7 +242,7 @@ body>main{flex:1 0 auto}
 .ct-card.soft{background:var(--soft);color:var(--ink);border:1px solid var(--line)}
 .ct-card.soft h2{color:var(--navy)}
 .ct-card.soft a{display:inline-block;margin-top:12px;font-weight:700;text-decoration:none}
-@media (max-width:900px){.ct-grid{grid-template-columns:1fr}.row2{grid-template-columns:1fr;gap:0}.ct-form{padding:24px}}
+@media (max-width:900px){.ct-grid{grid-template-columns:minmax(0,1fr)}.ct-grid>*{min-width:0}.ct-form input,.ct-form select,.ct-form textarea{max-width:100%;min-width:0}.row2{grid-template-columns:1fr;gap:0}.ct-form{padding:24px}}
 
 /* shared: nav dropdown + footer */
 .nav .has-sub{position:relative}
