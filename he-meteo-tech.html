@@ -366,6 +366,13 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
 .ft-soc a{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08)}
 .ft-soc a:hover{background:#2A8DB4}
 .ft-soc svg{width:18px;height:18px;fill:#fff}
+.map-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;height:100%;min-height:240px;margin:0;padding:20px;border:0;border-radius:inherit;background:linear-gradient(135deg,#EAF1F8,#DCE7F3);color:var(--navy,#0A2348);font:inherit;text-align:center;cursor:pointer}
+.map-ph svg{width:34px;height:34px;fill:#1F5FBF}
+.map-ph strong{font-size:1rem}
+.map-ph small{max-width:30ch;color:#3D4A60;font-size:.8rem;line-height:1.4}
+.map-ph:hover strong,.map-ph:focus-visible strong{text-decoration:underline}
+.map-ph:focus-visible{outline:3px solid #1F5FBF;outline-offset:-3px}
+.cp-map .map-ph{height:320px}
 </style>
 </head>
 <body>
@@ -404,7 +411,7 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
         <div><p class="cp-meta">נוסדה ב-1989 · חלק מהקבוצה מאז 2023</p><p class="cp-field green">מטאורולוגיה ומדעי הסביבה</p><p class="cp-desc">Meteo-Tech Ltd היא מהספקיות המובילות בישראל של מכשור ושירותים למטאורולוגיה ולמדעי הסביבה. החברה מתכננת, מקימה ומתחזקת רשתות של תחנות מטאורולוגיות, ומספקת ציוד לניטור תעשייתי, לאיכות אוויר, לתעופה ולמעבדות. שירותי הייעוץ הסביבתי שלה כוללים מודלים לפיזור מזהמים, תחום שבו יש לה טכנולוגיות מוגנות בפטנט, וכן מטאורולוגיה משפטית וסקרים אקלימיים.</p>
           <a class="btn btn-outline" href="https://www.meteo-tech.co.il" target="_blank" rel="noopener">Visit meteo-tech.co.il ›</a></div>
       </div><h2>שירותים</h2><ul class="svc"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>תכנון, הקמה ותחזוקה של רשתות תחנות מטאורולוגיות</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>ציוד לניטור תעשייתי, לאיכות אוויר, לתעופה ולמעבדות</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>מעבדת כיול מוסמכת (ISO/IEC 17025)</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>מודלים לפיזור מזהמים, בטכנולוגיות מוגנות בפטנט</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>מטאורולוגיה משפטית וסקרים אקלימיים</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>שירותי תצפיות וחיזוי מזג אוויר</span></li></ul><h2>איכות והסמכות</h2><ul class="certs"><li><a href="certificates/meteo-tech-iso9001-iqc.jpg" target="_blank" rel="noopener"><img decoding="async" src="certificates/meteo-tech-iso9001-iqc.jpg" alt="" loading="lazy" width="320" height="226"><span class="c-t" lang="en">ISO 9001:2015</span><span class="c-d">מערכת ניהול איכות בהסמכת המכון לבקרה ואיכות (IQC).</span><span class="c-l">לצפייה בתעודה ‹</span></a></li><li><a href="certificates/meteo-tech-iso17025-a2la.jpg" target="_blank" rel="noopener"><img decoding="async" src="certificates/meteo-tech-iso17025-a2la.jpg" alt="" loading="lazy" width="320" height="226"><span class="c-t" lang="en">ISO/IEC 17025:2017</span><span class="c-d">מעבדת כיול מוסמכת, תעודת A2LA מס׳ 7302.01.</span><span class="c-l">לצפייה בתעודה ‹</span></a></li></ul><h2>מיקום</h2>
-      <div class="cp-loc"><div class="cp-map"><iframe src="https://www.google.com/maps?q=31+Lehi+St.%2C+Bnei+Brak+5120052%2C+Israel&amp;hl=iw&amp;z=16&amp;output=embed" title="Map: Meteo-Tech Ltd, Bnei Brak" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="cp-loc"><div class="cp-map"><button type="button" class="map-ph" data-src="https://www.google.com/maps?q=31+Lehi+St.%2C+Bnei+Brak+5120052%2C+Israel&amp;hl=iw&amp;z=16&amp;output=embed" data-title="Map: Meteo-Tech Ltd, Bnei Brak"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><strong>הצגת מפה</strong><small>טעינת המפה מ-Google Maps. גוגל עשויה להציב עוגיות.</small><span class="sr-only"> – Map: Meteo-Tech Ltd, Bnei Brak</span></button></div>
         <div><p class="cp-addr">לח"י 31, בני ברק 5120052</p><p><a href="https://www.google.com/maps/search/?api=1&amp;query=31+Lehi+St.%2C+Bnei+Brak+5120052%2C+Israel" target="_blank" rel="noopener">פתיחה ב-Google Maps ‹</a></p><p><a href="he-locations.html">כל המיקומים ושעות הפעילות ‹</a></p><p><a href="he-contact.html">צור קשר ‹</a></p></div></div>
     </div>
   </section>
@@ -427,9 +434,10 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
   <div class="wrap ft-bottom">
     <ul>
       <li><a href="he-accessibility.html">הצהרת נגישות</a></li>
-      <li><a href="privacy.html" lang="en">Privacy</a></li>
-      <li><a href="disclaimer.html" lang="en">Disclaimer</a></li>
-      <li><a href="cookies.html" lang="en">Cookie Notice</a></li>
+      <li><a href="he-privacy.html">מדיניות פרטיות</a></li>
+      <li><a href="he-terms.html">תנאי שימוש</a></li>
+      <li><a href="he-disclaimer.html">הבהרה משפטית</a></li>
+      <li><a href="he-cookies.html">מדיניות עוגיות</a></li>
     </ul>
     <span>© 2026 <span lang="en">MRC Group</span>. כל הזכויות שמורות.</span>
   </div>
@@ -442,5 +450,6 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
   n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded',false)}});
 })();
 </script>
+<script src="maps.js" defer></script>
 </body>
 </html>
