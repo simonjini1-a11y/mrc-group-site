@@ -13,9 +13,9 @@
   <url><loc>https://mrc-group.net/locations.html</loc><lastmod>2026-10-19</lastmod><priority>0.8</priority></url>
   <url><loc>https://mrc-group.net/contact.html</loc><lastmod>2026-10-19</lastmod><priority>0.8</priority></url>
   <url><loc>https://mrc-group.net/he.html</loc><lastmod>2026-10-19</lastmod><priority>1.0</priority></url>
-  <url><loc>https://mrc-group.net/privacy.html</loc><lastmod>2026-10-19</lastmod><priority>0.3</priority></url>
+  <url><loc>https://mrc-group.net/privacy.html</loc><lastmod>2026-11-14</lastmod><priority>0.3</priority></url>
   <url><loc>https://mrc-group.net/accessibility.html</loc><lastmod>2026-10-19</lastmod><priority>0.3</priority></url>
-  <url><loc>https://mrc-group.net/cookies.html</loc><lastmod>2026-10-19</lastmod><priority>0.3</priority></url>
+  <url><loc>https://mrc-group.net/cookies.html</loc><lastmod>2026-11-14</lastmod><priority>0.3</priority></url>
   <url><loc>https://mrc-group.net/disclaimer.html</loc><lastmod>2026-10-19</lastmod><priority>0.3</priority></url>
   <url><loc>https://mrc-group.net/he-about.html</loc><lastmod>2026-10-20</lastmod><priority>0.7</priority></url>
   <url><loc>https://mrc-group.net/he-mrc.html</loc><lastmod>2026-10-20</lastmod><priority>0.7</priority></url>
@@ -35,4 +35,9 @@
   <url><loc>https://mrc-group.net/faq.html</loc><lastmod>2026-10-21</lastmod><priority>0.7</priority></url>
   <url><loc>https://mrc-group.net/he-catalogs.html</loc><lastmod>2026-10-21</lastmod><priority>0.7</priority></url>
   <url><loc>https://mrc-group.net/he-faq.html</loc><lastmod>2026-10-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://mrc-group.net/terms.html</loc><lastmod>2026-11-14</lastmod><priority>0.3</priority></url>
+  <url><loc>https://mrc-group.net/he-privacy.html</loc><lastmod>2026-11-14</lastmod><priority>0.3</priority></url>
+  <url><loc>https://mrc-group.net/he-cookies.html</loc><lastmod>2026-11-14</lastmod><priority>0.3</priority></url>
+  <url><loc>https://mrc-group.net/he-disclaimer.html</loc><lastmod>2026-11-14</lastmod><priority>0.3</priority></url>
+  <url><loc>https://mrc-group.net/he-terms.html</loc><lastmod>2026-11-14</lastmod><priority>0.3</priority></url>
 </urlset>

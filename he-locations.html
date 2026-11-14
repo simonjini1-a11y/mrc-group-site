@@ -346,6 +346,13 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
 .ft-soc a{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08)}
 .ft-soc a:hover{background:#2A8DB4}
 .ft-soc svg{width:18px;height:18px;fill:#fff}
+.map-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;height:100%;min-height:240px;margin:0;padding:20px;border:0;border-radius:inherit;background:linear-gradient(135deg,#EAF1F8,#DCE7F3);color:var(--navy,#0A2348);font:inherit;text-align:center;cursor:pointer}
+.map-ph svg{width:34px;height:34px;fill:#1F5FBF}
+.map-ph strong{font-size:1rem}
+.map-ph small{max-width:30ch;color:#3D4A60;font-size:.8rem;line-height:1.4}
+.map-ph:hover strong,.map-ph:focus-visible strong{text-decoration:underline}
+.map-ph:focus-visible{outline:3px solid #1F5FBF;outline-offset:-3px}
+.cp-map .map-ph{height:320px}
 </style>
 </head>
 <body>
@@ -382,7 +389,7 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
     <div class="wrap">
       <div class="locs">
         <article class="loc">
-          <div class="loc-photo" style="--photo:url(images/locations/holon.webp)" role="img" aria-label="בניין המשרדים בחולון"><span>חולון</span></div><div class="loc-map"><iframe src="https://www.google.com/maps?q=Hagavish+3%2C+Holon+5881702%2C+Israel&amp;hl=iw&amp;z=16&amp;output=embed" title="מפה: Holon, Israel" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <div class="loc-photo" style="--photo:url(images/locations/holon.webp)" role="img" aria-label="בניין המשרדים בחולון"><span>חולון</span></div><div class="loc-map"><button type="button" class="map-ph" data-src="https://www.google.com/maps?q=Hagavish+3%2C+Holon+5881702%2C+Israel&amp;hl=iw&amp;z=16&amp;output=embed" data-title="מפה: Holon, Israel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><strong>הצגת מפה</strong><small>טעינת המפה מ-Google Maps. גוגל עשויה להציב עוגיות.</small><span class="sr-only"> – מפה: Holon, Israel</span></button></div>
           <div class="loc-body">
             <p class="ctry">ישראל</p>
             <h3>חולון</h3><p class="tag">משרד ראשי של הקבוצה</p>
@@ -395,7 +402,7 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
           </div>
         </article>
         <article class="loc">
-          <div class="loc-photo" style="--photo:url(images/locations/bnei-brak.webp)" role="img" aria-label="בניין המשרדים בבני ברק"><span>בני ברק</span></div><div class="loc-map"><iframe src="https://www.google.com/maps?q=31+Lehi+St.%2C+Bnei+Brak+5120052%2C+Israel&amp;hl=iw&amp;z=16&amp;output=embed" title="מפה: Bnei Brak, Israel" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <div class="loc-photo" style="--photo:url(images/locations/bnei-brak.webp)" role="img" aria-label="בניין המשרדים בבני ברק"><span>בני ברק</span></div><div class="loc-map"><button type="button" class="map-ph" data-src="https://www.google.com/maps?q=31+Lehi+St.%2C+Bnei+Brak+5120052%2C+Israel&amp;hl=iw&amp;z=16&amp;output=embed" data-title="מפה: Bnei Brak, Israel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><strong>הצגת מפה</strong><small>טעינת המפה מ-Google Maps. גוגל עשויה להציב עוגיות.</small><span class="sr-only"> – מפה: Bnei Brak, Israel</span></button></div>
           <div class="loc-body">
             <p class="ctry">ישראל</p>
             <h3>בני ברק</h3>
@@ -408,7 +415,7 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
           </div>
         </article>
         <article class="loc">
-          <div class="loc-photo" style="--photo:url(images/locations/harlow.webp)" role="img" aria-label="בניין המשרדים בהארלו"><span>הארלו</span></div><div class="loc-map"><iframe src="https://www.google.com/maps?q=Cavendish+House%2C+Parkway%2C+Harlow+Business+Park%2C+Harlow%2C+Essex+CM19+5QF%2C+United+Kingdom&amp;hl=iw&amp;z=16&amp;output=embed" title="מפה: Harlow, United Kingdom" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <div class="loc-photo" style="--photo:url(images/locations/harlow.webp)" role="img" aria-label="בניין המשרדים בהארלו"><span>הארלו</span></div><div class="loc-map"><button type="button" class="map-ph" data-src="https://www.google.com/maps?q=Cavendish+House%2C+Parkway%2C+Harlow+Business+Park%2C+Harlow%2C+Essex+CM19+5QF%2C+United+Kingdom&amp;hl=iw&amp;z=16&amp;output=embed" data-title="מפה: Harlow, United Kingdom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><strong>הצגת מפה</strong><small>טעינת המפה מ-Google Maps. גוגל עשויה להציב עוגיות.</small><span class="sr-only"> – מפה: Harlow, United Kingdom</span></button></div>
           <div class="loc-body">
             <p class="ctry">בריטניה</p>
             <h3>הארלו</h3>
@@ -443,9 +450,10 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
   <div class="wrap ft-bottom">
     <ul>
       <li><a href="he-accessibility.html">הצהרת נגישות</a></li>
-      <li><a href="privacy.html" lang="en">Privacy</a></li>
-      <li><a href="disclaimer.html" lang="en">Disclaimer</a></li>
-      <li><a href="cookies.html" lang="en">Cookie Notice</a></li>
+      <li><a href="he-privacy.html">מדיניות פרטיות</a></li>
+      <li><a href="he-terms.html">תנאי שימוש</a></li>
+      <li><a href="he-disclaimer.html">הבהרה משפטית</a></li>
+      <li><a href="he-cookies.html">מדיניות עוגיות</a></li>
     </ul>
     <span>© 2026 <span lang="en">MRC Group</span>. כל הזכויות שמורות.</span>
   </div>
@@ -458,5 +466,6 @@ html[dir="rtl"] .menu-btn{margin-left:0;margin-right:auto}
   n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded',false)}});
 })();
 </script>
+<script src="maps.js" defer></script>
 </body>
 </html>

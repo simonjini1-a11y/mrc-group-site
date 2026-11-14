@@ -325,6 +325,13 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
 .ft-soc a{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08)}
 .ft-soc a:hover{background:#2A8DB4}
 .ft-soc svg{width:18px;height:18px;fill:#fff}
+.map-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;height:100%;min-height:240px;margin:0;padding:20px;border:0;border-radius:inherit;background:linear-gradient(135deg,#EAF1F8,#DCE7F3);color:var(--navy,#0A2348);font:inherit;text-align:center;cursor:pointer}
+.map-ph svg{width:34px;height:34px;fill:#1F5FBF}
+.map-ph strong{font-size:1rem}
+.map-ph small{max-width:30ch;color:#3D4A60;font-size:.8rem;line-height:1.4}
+.map-ph:hover strong,.map-ph:focus-visible strong{text-decoration:underline}
+.map-ph:focus-visible{outline:3px solid #1F5FBF;outline-offset:-3px}
+.cp-map .map-ph{height:320px}
 </style>
 </head>
 <body>
@@ -361,7 +368,7 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
     <div class="wrap">
       <div class="locs">
         <article class="loc">
-          <div class="loc-photo" style="--photo:url(images/locations/holon.webp)" role="img" aria-label="Office building in Holon"><span>Holon</span></div><div class="loc-map"><iframe src="https://www.google.com/maps?q=Hagavish+3%2C+Holon+5881702%2C+Israel&amp;hl=en&amp;z=16&amp;output=embed" title="Map: Holon, Israel" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <div class="loc-photo" style="--photo:url(images/locations/holon.webp)" role="img" aria-label="Office building in Holon"><span>Holon</span></div><div class="loc-map"><button type="button" class="map-ph" data-src="https://www.google.com/maps?q=Hagavish+3%2C+Holon+5881702%2C+Israel&amp;hl=en&amp;z=16&amp;output=embed" data-title="Map: Holon, Israel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><strong>Show Map</strong><small>Loads Google Maps. Google may set cookies.</small><span class="sr-only"> – Map: Holon, Israel</span></button></div>
           <div class="loc-body">
             <p class="ctry">Israel</p>
             <h3>Holon</h3><p class="tag">Group head office</p>
@@ -374,7 +381,7 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
           </div>
         </article>
         <article class="loc">
-          <div class="loc-photo" style="--photo:url(images/locations/bnei-brak.webp)" role="img" aria-label="Office building in Bnei Brak"><span>Bnei Brak</span></div><div class="loc-map"><iframe src="https://www.google.com/maps?q=31+Lehi+St.%2C+Bnei+Brak+5120052%2C+Israel&amp;hl=en&amp;z=16&amp;output=embed" title="Map: Bnei Brak, Israel" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <div class="loc-photo" style="--photo:url(images/locations/bnei-brak.webp)" role="img" aria-label="Office building in Bnei Brak"><span>Bnei Brak</span></div><div class="loc-map"><button type="button" class="map-ph" data-src="https://www.google.com/maps?q=31+Lehi+St.%2C+Bnei+Brak+5120052%2C+Israel&amp;hl=en&amp;z=16&amp;output=embed" data-title="Map: Bnei Brak, Israel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><strong>Show Map</strong><small>Loads Google Maps. Google may set cookies.</small><span class="sr-only"> – Map: Bnei Brak, Israel</span></button></div>
           <div class="loc-body">
             <p class="ctry">Israel</p>
             <h3>Bnei Brak</h3>
@@ -387,7 +394,7 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
           </div>
         </article>
         <article class="loc">
-          <div class="loc-photo" style="--photo:url(images/locations/harlow.webp)" role="img" aria-label="Office building in Harlow"><span>Harlow</span></div><div class="loc-map"><iframe src="https://www.google.com/maps?q=Cavendish+House%2C+Parkway%2C+Harlow+Business+Park%2C+Harlow%2C+Essex+CM19+5QF%2C+United+Kingdom&amp;hl=en&amp;z=16&amp;output=embed" title="Map: Harlow, United Kingdom" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <div class="loc-photo" style="--photo:url(images/locations/harlow.webp)" role="img" aria-label="Office building in Harlow"><span>Harlow</span></div><div class="loc-map"><button type="button" class="map-ph" data-src="https://www.google.com/maps?q=Cavendish+House%2C+Parkway%2C+Harlow+Business+Park%2C+Harlow%2C+Essex+CM19+5QF%2C+United+Kingdom&amp;hl=en&amp;z=16&amp;output=embed" data-title="Map: Harlow, United Kingdom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><strong>Show Map</strong><small>Loads Google Maps. Google may set cookies.</small><span class="sr-only"> – Map: Harlow, United Kingdom</span></button></div>
           <div class="loc-body">
             <p class="ctry">United Kingdom</p>
             <h3>Harlow</h3>
@@ -423,6 +430,7 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
     <ul>
       <li><a href="disclaimer.html">Disclaimer</a></li>
       <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms Of Use</a></li>
       <li><a href="accessibility.html">Accessibility</a></li>
       <li><a href="cookies.html">Cookie Notice</a></li>
       <li><a href="cookies.html#settings">Cookie Settings</a></li>
@@ -438,5 +446,6 @@ footer.site-footer .ft-bottom ul{display:flex;flex-wrap:wrap;gap:22px;list-style
   n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded',false)}});
 })();
 </script>
+<script src="maps.js" defer></script>
 </body>
 </html>
