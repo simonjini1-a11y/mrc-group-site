@@ -2,7 +2,7 @@
 
 ## Project
 - Repo: github.com/simonjini1-a11y/mrc-group-site (branch main) → GitHub Pages, domain mrc-group.net (CNAME).
-- Static HTML, no build. Each page has inline `<style>` and its own CSP `<meta>`. Inline menu script is allowed by a sha256 hash, so do not change it. Other JS lives in external files: `org-lines.js` (no longer in use), `catalog-filter.js`.
+- Static HTML, no build. Each page has inline `<style>` and its own CSP `<meta>`. Inline menu script is allowed by a sha256 hash, so do not change it. Other JS lives in an external file: `catalog-filter.js`.
 - CSP additions: `frame-src https://www.google.com` (map pages); `form-action 'self' https://formsubmit.co` (contact pages).
 - Working style: Simon (sales8@mrclab.com) runs the site. Instructions come from Eran Ovadya (CFO), with Reuven Bookstein (CEO) in copy. Answer in Hebrew, be brief.
 - Autonomy (approved by Simon): for tasks Simon gives, Claude does the work end-to-end without asking: edit, commit on the claude/ branch, open PR, merge, verify the Pages deploy. Work lean and token-efficient (batch edits, minimal reads, no unnecessary screenshots). Rename changed image files to bust browser cache.
